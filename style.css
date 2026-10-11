@@ -95,6 +95,7 @@ body {
   width: 100%;
   max-width: 100%;
   position: relative;
+  padding-top: var(--header-height);
   background-image: 
     radial-gradient(circle at 10% 20%, rgba(245, 158, 11, 0.035) 0%, transparent 40%),
     radial-gradient(circle at 90% 70%, rgba(37, 211, 102, 0.025) 0%, transparent 40%),
@@ -283,23 +284,24 @@ ul {
    4. Site Header & Responsive Navigation
    -------------------------------------------------------------------------- */
 .site-header {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
+  right: 0;
   width: 100%;
   height: var(--header-height);
-  background: rgba(9, 15, 29, 0.85);
+  background: rgba(8, 14, 27, 0.88);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border-glass);
-  z-index: 100;
-  transition: background var(--transition-normal), box-shadow var(--transition-normal);
+  z-index: 1000;
+  transition: background var(--transition-normal), box-shadow var(--transition-normal), border-color var(--transition-normal);
 }
 
 .site-header.scrolled {
-  background: rgba(7, 11, 20, 0.95);
-  box-shadow: var(--shadow-md);
-  border-bottom-color: rgba(245, 158, 11, 0.2);
+  background: rgba(6, 10, 18, 0.96);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+  border-bottom-color: rgba(245, 158, 11, 0.28);
 }
 
 .header-container {
@@ -429,7 +431,7 @@ ul {
   background: var(--bg-glass-light);
   border: 1px solid var(--border-glass);
   border-radius: 10px;
-  z-index: 105;
+  z-index: 1010;
 }
 
 .hamburger-bar {
@@ -462,7 +464,7 @@ ul {
   background: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  z-index: 998;
+  z-index: 1090;
   opacity: 0;
   visibility: hidden;
   transition: all var(--transition-normal);
@@ -482,7 +484,7 @@ ul {
   background: #091122;
   border-left: 1px solid var(--border-glass-bright);
   box-shadow: -15px 0 40px rgba(0, 0, 0, 0.7);
-  z-index: 999;
+  z-index: 1100;
   display: flex;
   flex-direction: column;
   transform: translateX(100%);
@@ -2050,7 +2052,7 @@ textarea.form-control {
   background: rgba(3, 6, 12, 0.88);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-  z-index: 1000;
+  z-index: 10000;
   display: flex;
   align-items: flex-start; /* CRITICAL: Never center vertically on scrollable overlay to prevent top clipping */
   justify-content: center;
@@ -2373,7 +2375,7 @@ textarea.form-control {
   position: fixed;
   bottom: 28px;
   right: 28px;
-  z-index: 990;
+  z-index: 1020;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -2648,6 +2650,9 @@ textarea.form-control {
 }
 
 @media (max-width: 680px) {
+  :root {
+    --header-height: 72px;
+  }
   .form-row {
     grid-template-columns: 1fr;
     gap: 12px;
@@ -2755,6 +2760,20 @@ textarea.form-control {
 
 /* Standard Mobile Screens (<= 480px) */
 @media (max-width: 480px) {
+  :root {
+    --header-height: 68px;
+  }
+  .logo-mark {
+    width: 38px;
+    height: 38px;
+    font-size: 1.15rem;
+  }
+  .logo-title {
+    font-size: 1.05rem;
+  }
+  .logo-sub {
+    font-size: 0.58rem;
+  }
   .container {
     padding-left: 12px;
     padding-right: 12px;
@@ -2799,6 +2818,20 @@ textarea.form-control {
 
 /* Ultra-small mobile screens (<= 360px) */
 @media (max-width: 360px) {
+  :root {
+    --header-height: 64px;
+  }
+  .logo-mark {
+    width: 34px;
+    height: 34px;
+    font-size: 1rem;
+  }
+  .logo-title {
+    font-size: 0.95rem;
+  }
+  .logo-sub {
+    font-size: 0.54rem;
+  }
   .container {
     padding-left: 8px;
     padding-right: 8px;

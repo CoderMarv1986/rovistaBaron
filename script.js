@@ -41,13 +41,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const navLinks = document.querySelectorAll('.nav-link, .mobile-nav-link');
 
   // Sticky header on scroll
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 40) {
+  const updateHeaderScroll = () => {
+    if (!siteHeader) return;
+    if (window.scrollY > 20) {
       siteHeader.classList.add('scrolled');
     } else {
       siteHeader.classList.remove('scrolled');
     }
-  }, { passive: true });
+  };
+  window.addEventListener('scroll', updateHeaderScroll, { passive: true });
+  updateHeaderScroll();
 
   // Open Mobile Drawer
   function openMobileMenu() {
@@ -101,8 +104,8 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
         closeMobileMenu();
 
-        // Calculate offset position for header
-        const headerOffset = 75;
+        // Calculate offset position for fixed sticky header
+        const headerOffset = siteHeader ? siteHeader.offsetHeight : 80;
         const elementPosition = targetEl.getBoundingClientRect().top;
         const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
