@@ -264,77 +264,7 @@ ul {
 }
 
 /* --------------------------------------------------------------------------
-   4. Top Announcement Bar
-   -------------------------------------------------------------------------- */
-.top-announcement {
-  background: #05080f;
-  border-bottom: 1px solid var(--border-glass);
-  font-size: 0.82rem;
-  color: var(--text-secondary);
-  padding: 8px 0;
-  position: relative;
-  z-index: 101;
-}
-
-.top-announcement-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-}
-
-.announcement-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-weight: 600;
-  color: var(--text-primary);
-}
-
-.live-dot {
-  width: 8px;
-  height: 8px;
-  background-color: var(--whatsapp-green);
-  border-radius: 50%;
-  box-shadow: 0 0 8px var(--whatsapp-green);
-  animation: pulse-dot 2s infinite ease-in-out;
-}
-
-@keyframes pulse-dot {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.4; transform: scale(0.85); }
-}
-
-.announcement-promo {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: var(--text-secondary);
-}
-
-.announcement-promo i {
-  color: var(--gold-light);
-}
-
-.announcement-promo strong {
-  color: var(--gold-light);
-}
-
-.top-whatsapp-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  color: var(--whatsapp-green);
-  font-weight: 600;
-  transition: color var(--transition-fast);
-}
-
-.top-whatsapp-link:hover {
-  color: #ffffff;
-}
-
-/* --------------------------------------------------------------------------
-   5. Site Header & Responsive Navigation
+   4. Site Header & Responsive Navigation
    -------------------------------------------------------------------------- */
 .site-header {
   position: sticky;
@@ -1728,7 +1658,7 @@ ul {
 }
 
 /* --------------------------------------------------------------------------
-   13. WhatsApp Contact Section & Inquiry Builder
+   13. WhatsApp Contact Section & Inquiry Builder (100% Responsive)
    -------------------------------------------------------------------------- */
 .contact-section {
   background: #060a14;
@@ -1737,12 +1667,13 @@ ul {
 .contact-card-container {
   display: grid;
   grid-template-columns: 1fr 1.15fr;
-  gap: 48px;
-  background: rgba(14, 25, 48, 0.6);
+  gap: clamp(24px, 4vw, 48px);
+  background: rgba(14, 25, 48, 0.65);
   backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
   border: 1px solid var(--border-glass-bright);
-  border-radius: var(--border-radius-lg);
-  padding: 50px;
+  border-radius: clamp(16px, 3vw, var(--border-radius-lg));
+  padding: clamp(20px, 4vw, 50px);
   box-shadow: var(--shadow-lg);
 }
 
@@ -1753,35 +1684,35 @@ ul {
 
 .contact-title {
   font-family: var(--font-heading);
-  font-size: clamp(1.8rem, 3.2vw, 2.5rem);
+  font-size: clamp(1.5rem, 3.5vw, 2.5rem);
   font-weight: 700;
   line-height: 1.25;
-  margin: 14px 0 16px 0;
+  margin: 12px 0 14px 0;
 }
 
 .contact-desc {
-  font-size: 1rem;
+  font-size: clamp(0.88rem, 2vw, 1rem);
   color: var(--text-secondary);
   line-height: 1.65;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
 }
 
 .contact-features-list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  margin-bottom: 36px;
+  gap: 18px;
+  margin-bottom: 30px;
 }
 
 .contact-feature-item {
   display: flex;
-  gap: 16px;
+  gap: 14px;
   align-items: flex-start;
 }
 
 .cf-icon {
-  width: 42px;
-  height: 42px;
+  width: 40px;
+  height: 40px;
   border-radius: 12px;
   background: rgba(37, 211, 102, 0.12);
   border: 1px solid rgba(37, 211, 102, 0.3);
@@ -1789,28 +1720,29 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   flex-shrink: 0;
 }
 
 .contact-feature-item h4 {
-  font-size: 0.98rem;
+  font-size: clamp(0.9rem, 2.5vw, 0.98rem);
   font-weight: 700;
   color: #ffffff;
   margin-bottom: 3px;
 }
 
 .contact-feature-item p {
-  font-size: 0.86rem;
+  font-size: clamp(0.8rem, 2.2vw, 0.86rem);
   color: var(--text-secondary);
+  line-height: 1.5;
 }
 
 .office-locations-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 8px;
   margin-top: auto;
-  padding-top: 24px;
+  padding-top: 20px;
   border-top: 1px solid var(--border-glass);
 }
 
@@ -1818,10 +1750,10 @@ ul {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-size: 0.82rem;
+  font-size: 0.78rem;
   color: var(--text-secondary);
   background: rgba(255, 255, 255, 0.04);
-  padding: 6px 14px;
+  padding: 5px 12px;
   border-radius: var(--border-radius-full);
 }
 
@@ -1833,13 +1765,13 @@ ul {
 .whatsapp-form-wrapper {
   background: rgba(9, 16, 32, 0.85);
   border: 1px solid var(--border-glass-bright);
-  border-radius: var(--border-radius-md);
-  padding: 34px;
+  border-radius: clamp(12px, 2.5vw, var(--border-radius-md));
+  padding: clamp(18px, 4vw, 34px);
   box-shadow: var(--shadow-md);
 }
 
 .form-header {
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .form-header-badge {
@@ -1856,26 +1788,26 @@ ul {
 
 .form-header h3 {
   font-family: var(--font-heading);
-  font-size: 1.45rem;
+  font-size: clamp(1.2rem, 3vw, 1.45rem);
   color: #ffffff;
   margin-bottom: 6px;
 }
 
 .form-header p {
-  font-size: 0.88rem;
+  font-size: clamp(0.82rem, 2vw, 0.88rem);
   color: var(--text-secondary);
 }
 
 .inquiry-form {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 14px;
 }
 
 .form-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 16px;
+  gap: 14px;
 }
 
 .form-group {
@@ -1885,7 +1817,7 @@ ul {
 }
 
 .form-group label {
-  font-size: 0.82rem;
+  font-size: 0.8rem;
   font-weight: 600;
   color: var(--text-secondary);
 }
@@ -1896,12 +1828,16 @@ ul {
 
 .form-control {
   width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
   background: rgba(5, 9, 18, 0.7);
   border: 1px solid var(--border-glass);
   border-radius: var(--border-radius-sm);
-  padding: 11px 14px;
+  padding: 12px 14px;
   color: #ffffff;
-  font-size: 0.92rem;
+  font-size: 16px; /* 16px minimum prevents iOS Safari auto-zooming on focus */
+  line-height: 1.4;
+  min-height: 48px;
   transition: all var(--transition-fast);
 }
 
@@ -1917,6 +1853,7 @@ ul {
 
 textarea.form-control {
   resize: vertical;
+  min-height: 85px;
 }
 
 /* WhatsApp Live Preview Box */
@@ -1924,8 +1861,10 @@ textarea.form-control {
   background: rgba(37, 211, 102, 0.06);
   border: 1px dashed rgba(37, 211, 102, 0.35);
   border-radius: var(--border-radius-sm);
-  padding: 14px 18px;
-  margin: 6px 0 10px 0;
+  padding: 12px 16px;
+  margin: 4px 0 8px 0;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .preview-header {
@@ -1933,7 +1872,7 @@ textarea.form-control {
   align-items: center;
   gap: 8px;
   color: var(--whatsapp-green);
-  font-size: 0.76rem;
+  font-size: 0.74rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -1941,29 +1880,41 @@ textarea.form-control {
 }
 
 .preview-text {
-  font-size: 0.86rem;
+  font-size: clamp(0.78rem, 2vw, 0.86rem);
   color: var(--text-secondary);
   font-style: italic;
   line-height: 1.5;
+  white-space: pre-wrap;
+}
+
+#send-whatsapp-btn {
+  min-height: 50px;
+  font-size: clamp(0.92rem, 2.5vw, 1.05rem);
+  white-space: normal;
+  text-align: center;
+  justify-content: center;
+  line-height: 1.35;
+  padding: 14px 20px;
 }
 
 /* --------------------------------------------------------------------------
-   14. Package Details Interactive Modal
+   14. Package Details Interactive Modal (100% Responsive)
    -------------------------------------------------------------------------- */
 .modal-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(3, 6, 12, 0.85);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: rgba(3, 6, 12, 0.88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 24px;
+  padding: clamp(10px, 3vw, 24px);
   opacity: 0;
   visibility: hidden;
   transition: all var(--transition-normal);
+  overflow-y: auto;
 }
 
 .modal-overlay.open {
@@ -1974,15 +1925,17 @@ textarea.form-control {
 .modal-card {
   background: #0c162e;
   border: 1px solid var(--border-glass-bright);
-  border-radius: var(--border-radius-lg);
+  border-radius: clamp(14px, 3vw, 22px);
   max-width: 680px;
   width: 100%;
-  max-height: 90vh;
+  max-height: 92vh;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   position: relative;
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.85);
   transform: translateY(20px) scale(0.97);
   transition: transform var(--transition-normal);
+  margin: auto;
 }
 
 .modal-overlay.open .modal-card {
@@ -1991,20 +1944,20 @@ textarea.form-control {
 
 .modal-close-btn {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: clamp(10px, 2.5vw, 16px);
+  right: clamp(10px, 2.5vw, 16px);
   width: 38px;
   height: 38px;
   border-radius: 50%;
-  background: rgba(7, 11, 20, 0.8);
-  backdrop-filter: blur(8px);
-  border: 1px solid var(--border-glass-bright);
+  background: rgba(7, 11, 20, 0.88);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
   color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.1rem;
-  z-index: 5;
+  font-size: 1.15rem;
+  z-index: 10;
   transition: all var(--transition-fast);
 }
 
@@ -2016,8 +1969,10 @@ textarea.form-control {
 
 .modal-image-wrapper {
   position: relative;
-  height: 300px;
+  height: clamp(180px, 32vw, 290px);
+  min-height: 170px;
   overflow: hidden;
+  background: #070b14;
 }
 
 .modal-image {
@@ -2029,41 +1984,49 @@ textarea.form-control {
 .modal-image-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(12, 22, 46, 0.9) 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(12, 22, 46, 0.95) 100%);
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  padding: 20px;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: clamp(12px, 3vw, 20px);
 }
 
 .modal-discount-badge {
   background: #ef4444;
   color: #ffffff;
-  font-size: 0.85rem;
+  font-size: clamp(0.74rem, 2vw, 0.84rem);
   font-weight: 700;
-  padding: 5px 14px;
+  padding: 4px 12px;
   border-radius: var(--border-radius-full);
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.4);
 }
 
 .modal-country-badge {
-  background: rgba(7, 11, 20, 0.85);
+  background: rgba(7, 11, 20, 0.88);
   backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   color: #ffffff;
-  font-size: 0.85rem;
+  font-size: clamp(0.74rem, 2vw, 0.84rem);
   font-weight: 600;
-  padding: 5px 14px;
+  padding: 4px 12px;
   border-radius: var(--border-radius-full);
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .modal-body {
-  padding: 28px;
+  padding: clamp(16px, 4vw, 28px);
 }
 
 .modal-meta-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
   margin-bottom: 12px;
 }
 
@@ -2073,10 +2036,17 @@ textarea.form-control {
   gap: 6px;
   color: var(--gold-primary);
   font-weight: 700;
+  font-size: clamp(0.8rem, 2.2vw, 0.9rem);
+}
+
+.modal-reviews-count {
+  color: var(--text-muted);
+  font-weight: 400;
+  font-size: 0.78rem;
 }
 
 .modal-duration {
-  font-size: 0.88rem;
+  font-size: clamp(0.78rem, 2vw, 0.86rem);
   color: var(--text-secondary);
   display: flex;
   align-items: center;
@@ -2085,93 +2055,108 @@ textarea.form-control {
 
 .modal-title {
   font-family: var(--font-heading);
-  font-size: 1.65rem;
+  font-size: clamp(1.25rem, 4vw, 1.65rem);
   font-weight: 700;
   line-height: 1.3;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
+  word-break: break-word;
 }
 
 .modal-description {
-  font-size: 0.95rem;
+  font-size: clamp(0.86rem, 2vw, 0.94rem);
   color: var(--text-secondary);
-  line-height: 1.65;
-  margin-bottom: 24px;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
 
 .modal-highlights-container {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid var(--border-glass);
-  border-radius: var(--border-radius-md);
-  padding: 20px;
-  margin-bottom: 26px;
+  border-radius: 12px;
+  padding: clamp(14px, 3vw, 20px);
+  margin-bottom: 22px;
 }
 
 .modal-section-heading {
-  font-size: 0.92rem;
+  font-size: 0.88rem;
   font-weight: 700;
   color: var(--gold-light);
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
 .modal-highlights-list {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px 16px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 8px 14px;
 }
 
 .modal-highlights-list li {
-  font-size: 0.86rem;
+  font-size: clamp(0.8rem, 2vw, 0.85rem);
   color: var(--text-secondary);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 8px;
+  line-height: 1.4;
+  word-break: break-word;
 }
 
 .modal-highlights-list li::before {
   content: '✓';
   color: var(--whatsapp-green);
   font-weight: bold;
+  flex-shrink: 0;
 }
 
 .modal-pricing-box {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: rgba(7, 11, 20, 0.7);
+  background: rgba(7, 11, 20, 0.75);
   border: 1px solid var(--border-gold);
-  border-radius: var(--border-radius-md);
-  padding: 20px 24px;
-  gap: 20px;
+  border-radius: 14px;
+  padding: clamp(14px, 3vw, 22px);
+  gap: 16px;
+}
+
+.pricing-col {
+  display: flex;
+  flex-direction: column;
 }
 
 .modal-price-values {
   display: flex;
   align-items: baseline;
-  gap: 12px;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .modal-discount-rate {
   font-family: var(--font-heading);
-  font-size: 1.9rem;
+  font-size: clamp(1.5rem, 4.5vw, 1.9rem);
   font-weight: 800;
   color: #ffffff;
+  line-height: 1.1;
 }
 
 .modal-base-rate {
-  font-size: 1.05rem;
+  font-size: clamp(0.9rem, 2.5vw, 1.05rem);
   color: var(--text-muted);
   text-decoration: line-through;
 }
 
 .modal-savings-note {
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   color: var(--whatsapp-green);
   font-weight: 600;
   display: block;
   margin-top: 2px;
+}
+
+.modal-action-col {
+  flex-shrink: 0;
 }
 
 /* --------------------------------------------------------------------------
@@ -2399,7 +2384,7 @@ textarea.form-control {
 }
 
 /* --------------------------------------------------------------------------
-   17. Responsive Media Queries
+   17. Responsive Media Queries (100% Mobile, Tablet & Desktop Optimized)
    -------------------------------------------------------------------------- */
 @media (max-width: 1080px) {
   .hero-search-form {
@@ -2422,7 +2407,8 @@ textarea.form-control {
   }
   .contact-card-container {
     grid-template-columns: 1fr;
-    padding: 34px;
+    gap: 36px;
+    padding: 36px 30px;
   }
   .footer-container {
     grid-template-columns: 1fr 1fr;
@@ -2430,14 +2416,6 @@ textarea.form-control {
 }
 
 @media (max-width: 860px) {
-  .top-announcement-inner {
-    flex-direction: column;
-    text-align: center;
-    gap: 8px;
-  }
-  .announcement-promo {
-    font-size: 0.78rem;
-  }
   .main-nav,
   .header-cta {
     display: none;
@@ -2452,27 +2430,42 @@ textarea.form-control {
     padding: 0;
   }
   .carousel-arrow {
-    display: none; /* Swipe & touch or dots on mobile */
+    display: none; /* Swipe gestures & dots on mobile */
   }
   .filter-top-row,
   .filter-bottom-row {
     grid-template-columns: 1fr;
   }
+}
+
+@media (max-width: 680px) {
   .form-row {
     grid-template-columns: 1fr;
+    gap: 14px;
   }
   .modal-pricing-box {
     flex-direction: column;
     align-items: stretch;
+    text-align: center;
+    gap: 16px;
+  }
+  .modal-price-values {
+    justify-content: center;
+  }
+  .modal-action-col,
+  .modal-action-col .btn {
+    width: 100%;
+    justify-content: center;
   }
   .modal-highlights-list {
     grid-template-columns: 1fr;
+    gap: 10px;
   }
 }
 
 @media (max-width: 580px) {
   .section {
-    padding: 60px 0;
+    padding: 50px 0;
   }
   .container {
     padding-left: 16px;
@@ -2482,7 +2475,7 @@ textarea.form-control {
     grid-template-columns: 1fr;
   }
   .carousel-slide-content {
-    padding: 24px 20px;
+    padding: 24px 18px;
   }
   .carousel-price-wrapper {
     flex-direction: column;
@@ -2502,16 +2495,66 @@ textarea.form-control {
   .carousel-actions .btn {
     width: 100%;
   }
+  .contact-card-container {
+    padding: 20px 14px;
+    border-radius: 16px;
+    gap: 26px;
+  }
+  .whatsapp-form-wrapper {
+    padding: 18px 14px;
+  }
+  .modal-overlay {
+    padding: 10px 8px;
+  }
+  .modal-body {
+    padding: 18px 14px;
+  }
+  .modal-pricing-box {
+    padding: 14px 12px;
+  }
   .floating-whatsapp-container {
-    bottom: 20px;
-    right: 20px;
+    bottom: 18px;
+    right: 18px;
   }
   .floating-whatsapp-btn {
-    width: 54px;
-    height: 54px;
-    font-size: 1.7rem;
+    width: 52px;
+    height: 52px;
+    font-size: 1.65rem;
   }
   .footer-container {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Ultra-small mobile screens (<= 360px) */
+@media (max-width: 360px) {
+  .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .contact-card-container {
+    padding: 16px 10px;
+  }
+  .whatsapp-form-wrapper {
+    padding: 14px 10px;
+  }
+  .form-control {
+    padding: 10px 12px;
+  }
+  #send-whatsapp-btn {
+    padding: 12px 14px;
+    font-size: 0.88rem;
+  }
+  .modal-overlay {
+    padding: 6px 4px;
+  }
+  .modal-body {
+    padding: 14px 10px;
+  }
+  .modal-title {
+    font-size: 1.2rem;
+  }
+  .modal-discount-rate {
+    font-size: 1.45rem;
   }
 }
