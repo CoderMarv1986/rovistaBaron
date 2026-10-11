@@ -850,22 +850,34 @@ document.addEventListener('DOMContentLoaded', () => {
   const contactBudgetSelect = document.getElementById('contact-budget');
   const contactMessageInput = document.getElementById('contact-message');
   const previewText = document.getElementById('whatsapp-preview-text');
+  const sendWhatsAppBtn = document.getElementById('send-whatsapp-btn');
 
   function updateWhatsAppPreview() {
-    const name = contactNameInput && contactNameInput.value.trim() ? contactNameInput.value.trim() : '[Your Name]';
-    const destination = contactDestSelect && contactDestSelect.value ? contactDestSelect.value : '[Selected Destination]';
-    const travelers = contactTravelersSelect ? contactTravelersSelect.value : '2 Guests';
-    const travelDate = contactDateInput && contactDateInput.value.trim() ? contactDateInput.value.trim() : 'Upcoming Season';
-    const budget = contactBudgetSelect ? contactBudgetSelect.value : 'Flexible';
-    const userNote = contactMessageInput && contactMessageInput.value.trim() ? `\n• Special Requests: "${contactMessageInput.value.trim()}"` : '';
+    const name = contactNameInput && contactNameInput.value.trim() ? contactNameInput.value.trim() : '';
+    const phone = contactPhoneInput && contactPhoneInput.value.trim() ? contactPhoneInput.value.trim() : '';
+    const destination = contactDestSelect && contactDestSelect.value ? contactDestSelect.value : '';
+    const travelers = contactTravelersSelect ? contactTravelersSelect.value : 'Couple / 2 Guests';
+    const travelDate = contactDateInput && contactDateInput.value.trim() ? contactDateInput.value.trim() : '';
+    const budget = contactBudgetSelect && contactBudgetSelect.value !== 'No Specific Budget' ? contactBudgetSelect.value : '';
+    const userNote = contactMessageInput && contactMessageInput.value.trim() ? contactMessageInput.value.trim() : '';
 
-    const previewMsg = `"Hello Rovista Baron Global,\n\nMy name is ${name}. I would like to plan a luxury journey:\n• Destination: ${destination}\n• Travelers: ${travelers}\n• Preferred Dates: ${travelDate}\n• Budget Range: ${budget}${userNote}\n\nPlease share availability and bespoke itinerary recommendations."`;
-
-    if (previewText) {
-      previewText.textContent = previewMsg;
+    let messageText = '';
+    if (name || destination || travelDate || userNote) {
+      messageText = `Hello Rovista Baron Global,\n\nI would like to plan a bespoke luxury journey:${name ? `\n• Traveler: ${name}` : ''}${phone ? `\n• Contact: ${phone}` : ''}${destination ? `\n• Destination: ${destination}` : ''}\n• Travelers: ${travelers}${travelDate ? `\n• Preferred Dates: ${travelDate}` : ''}${budget ? `\n• Budget: ${budget}` : ''}${userNote ? `\n• Special Wishes: "${userNote}"` : ''}\n\nPlease share availability and bespoke recommendations.`;
+    } else {
+      messageText = `Hello Rovista Baron Global,\n\nI would like to inquire about your luxury tour packages and custom VIP itineraries. Please connect me with a travel concierge.`;
     }
 
-    return previewMsg.replace(/^"|"$/g, '');
+    if (previewText) {
+      previewText.textContent = `"${messageText}"`;
+    }
+
+    const whatsappUrl = `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(messageText)}`;
+    if (sendWhatsAppBtn) {
+      sendWhatsAppBtn.href = whatsappUrl;
+    }
+
+    return messageText;
   }
 
   // Update preview on any input change
@@ -884,21 +896,9 @@ document.addEventListener('DOMContentLoaded', () => {
   if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
-
-      if (!contactNameInput.value.trim()) {
-        contactNameInput.focus();
-        return;
+      if (sendWhatsAppBtn && sendWhatsAppBtn.href) {
+        window.open(sendWhatsAppBtn.href, '_blank', 'noopener,noreferrer');
       }
-      if (!contactDestSelect.value) {
-        contactDestSelect.focus();
-        return;
-      }
-
-      const rawMessage = updateWhatsAppPreview();
-      const whatsappUrl = `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(rawMessage)}`;
-
-      // Open WhatsApp in new tab
-      window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
     });
   }
 
