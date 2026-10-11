@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROVISTA BARON GLOBAL | Bespoke Luxury Travel & Curated Global Expeditions</title>
+  <meta name="description" content="Discover world-class luxury tour packages and bespoke expeditions curated by Rovista Baron Global. Experience 5-star itineraries, private guides, and instant WhatsApp concierge.">
+  <meta name="keywords" content="luxury travel, tour packages, bespoke vacations, VIP concierge, Switzerland tours, Maldives resorts, Japan travel, Rovista Baron Global">
+  <meta name="theme-color" content="#0b132b">
+
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="ROVISTA BARON GLOBAL | Curated Luxury Travel Expeditions">
+  <meta property="og:description" content="Exclusive tour packages with discounts, 5-star accommodations, and instant WhatsApp booking.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Cinzel:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement" id="top-announcement">
+    <div class="container top-announcement-inner">
+      <div class="announcement-badge">
+        <span class="live-dot"></span>
+        <span>24/7 VIP Global Concierge Active</span>
+      </div>
+      <div class="announcement-promo">
+        <i class="fa-solid fa-sparkles"></i>
+        <span>Exclusive Seasonal Escapes: Save Up to <strong>35% OFF</strong> with Instant WhatsApp Booking</span>
+      </div>
+      <div class="announcement-actions">
+        <a href="https://wa.me/18007684782?text=Hello%20Rovista%20Baron%20Global,%20I%20would%20like%20to%20inquire%20about%20your%20luxury%20tour%20packages." target="_blank" rel="noopener noreferrer" class="top-whatsapp-link" id="top-bar-whatsapp">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>WhatsApp Hotline</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      <a href="#home" class="brand-logo" id="brand-logo" aria-label="Rovista Baron Global Home">
+        <div class="logo-mark">
+          <i class="fa-solid fa-compass"></i>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">ROVISTA BARON</span>
+          <span class="logo-sub">GLOBAL EXPEDITIONS</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="main-nav" id="main-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active" id="nav-link-home">Home</a></li>
+          <li class="nav-item"><a href="#highlights" class="nav-link" id="nav-link-highlights">Latest Offers <span class="nav-pill-badge">Hot</span></a></li>
+          <li class="nav-item"><a href="#packages-section" class="nav-link" id="nav-link-packages">Tour Packages</a></li>
+          <li class="nav-item"><a href="#why-us" class="nav-link" id="nav-link-why">Why Us</a></li>
+          <li class="nav-item"><a href="#testimonials" class="nav-link" id="nav-link-reviews">Reviews</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link" id="nav-link-contact">Contact Concierge</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action & Mobile Toggle -->
+      <div class="header-right-actions">
+        <a href="#contact" class="btn btn-gold btn-sm header-cta" id="header-book-btn">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>Plan My Trip</span>
+        </a>
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer & Overlay -->
+  <div class="mobile-drawer-overlay" id="mobile-overlay" aria-hidden="true"></div>
+  <aside class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation" aria-hidden="true">
+    <div class="mobile-drawer-header">
+      <div class="logo-text">
+        <span class="logo-title">ROVISTA BARON</span>
+        <span class="logo-sub">GLOBAL EXPEDITIONS</span>
+      </div>
+      <button class="mobile-drawer-close" id="mobile-close-btn" aria-label="Close menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <div class="mobile-drawer-body">
+      <ul class="mobile-nav-list">
+        <li><a href="#home" class="mobile-nav-link" id="mob-link-home"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="#highlights" class="mobile-nav-link" id="mob-link-highlights"><i class="fa-solid fa-fire"></i> Latest Offers <span class="badge-mini">Hot</span></a></li>
+        <li><a href="#packages-section" class="mobile-nav-link" id="mob-link-packages"><i class="fa-solid fa-earth-americas"></i> Tour Packages</a></li>
+        <li><a href="#why-us" class="mobile-nav-link" id="mob-link-why"><i class="fa-solid fa-award"></i> Why Us</a></li>
+        <li><a href="#testimonials" class="mobile-nav-link" id="mob-link-reviews"><i class="fa-solid fa-star"></i> Reviews</a></li>
+        <li><a href="#contact" class="mobile-nav-link" id="mob-link-contact"><i class="fa-solid fa-envelope"></i> Contact Concierge</a></li>
+      </ul>
+      <div class="mobile-drawer-footer">
+        <a href="https://wa.me/18007684782?text=Hello%20Rovista%20Baron%20Global,%20I%20am%20interested%20in%20planning%20a%20luxury%20tour." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp w-100" id="mob-drawer-whatsapp">
+          <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+        </a>
+        <div class="mobile-support-info">
+          <p><i class="fa-solid fa-clock"></i> 24/7 Travel Specialist Desk</p>
+          <p><i class="fa-solid fa-shield-halved"></i> 100% Certified VIP Itineraries</p>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+      <div class="hero-bg-overlay"></div>
+      <div class="container hero-content">
+        <div class="hero-badge animate-fade-in">
+          <i class="fa-solid fa-crown"></i>
+          <span>Curated For The Discerning Traveler</span>
+        </div>
+        <h1 class="hero-title animate-fade-in-up">
+          Luxury Journeys Beyond Ordinary Horizons
+        </h1>
+        <p class="hero-subtitle animate-fade-in-up">
+          Immerse yourself in world-class sanctuaries, private chartered expeditions, and handpicked 5-star retreats with Rovista Baron Global. Experience seamless travel with your dedicated WhatsApp concierge.
+        </p>
+
+        <!-- Quick Search Pill / Quick Filter Jump -->
+        <div class="hero-search-card" id="hero-search-card">
+          <form class="hero-search-form" id="hero-quick-form" onsubmit="event.preventDefault();">
+            <div class="hero-form-field">
+              <label for="hero-destination-input"><i class="fa-solid fa-location-dot"></i> Destination</label>
+              <input type="text" id="hero-destination-input" placeholder="e.g. Switzerland, Maldives, Kyoto..." autocomplete="off">
+            </div>
+            <div class="hero-form-divider"></div>
+            <div class="hero-form-field">
+              <label for="hero-country-select"><i class="fa-solid fa-globe"></i> Country</label>
+              <select id="hero-country-select">
+                <option value="all">All Global Destinations</option>
+                <option value="Switzerland">Switzerland</option>
+                <option value="Japan">Japan</option>
+                <option value="Italy">Italy</option>
+                <option value="United Arab Emirates">United Arab Emirates</option>
+                <option value="Maldives">Maldives</option>
+                <option value="Iceland">Iceland</option>
+                <option value="France">France</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Greece">Greece</option>
+                <option value="Indonesia">Indonesia (Bali)</option>
+              </select>
+            </div>
+            <div class="hero-form-divider"></div>
+            <div class="hero-form-field">
+              <label for="hero-discount-select"><i class="fa-solid fa-percent"></i> Offer Privilege</label>
+              <select id="hero-discount-select">
+                <option value="all">Any Offer</option>
+                <option value="20">20%+ Discount</option>
+                <option value="25">25%+ Discount</option>
+                <option value="30">30%+ Discount</option>
+              </select>
+            </div>
+            <button type="button" class="btn btn-gold hero-search-btn" id="hero-search-submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <span>Find Packages</span>
+            </button>
+          </form>
+        </div>
+
+        <!-- Trust Stats Counter Grid -->
+        <div class="hero-stats-grid">
+          <div class="stat-card">
+            <span class="stat-number">48+</span>
+            <span class="stat-label">Bespoke Destinations</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">14.5k+</span>
+            <span class="stat-label">Delighted Travelers</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">99.8%</span>
+            <span class="stat-label">5-Star Traveler Rating</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">&lt; 5 min</span>
+            <span class="stat-label">WhatsApp Response Time</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest Offers / Highlights Carousel Section -->
+    <section class="section highlights-section" id="highlights">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag"><i class="fa-solid fa-fire"></i> Exclusive Privileges</span>
+          <h2 class="section-title">Latest Offers &amp; Flash Discounts</h2>
+          <p class="section-subtitle">
+            Handpicked limited-availability journeys with premium price concessions. Book directly via WhatsApp to lock in these verified privileges before they expire.
+          </p>
+        </div>
+
+        <!-- Highlights Carousel Wrapper -->
+        <div class="carousel-container" id="carousel-container" aria-roledescription="carousel" aria-label="Latest Offers Carousel">
+          <div class="carousel-track-wrapper">
+            <div class="carousel-track" id="carousel-track">
+              <!-- Rendered Dynamically from highlights.json -->
+              <div class="carousel-loading">
+                <div class="spinner"></div>
+                <p>Loading curated highlights...</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel Controls -->
+          <button class="carousel-arrow carousel-arrow-prev" id="carousel-prev" aria-label="Previous Offer Slide">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="carousel-arrow carousel-arrow-next" id="carousel-next" aria-label="Next Offer Slide">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+
+          <!-- Carousel Indicator Dots -->
+          <div class="carousel-indicators" id="carousel-indicators"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Filter & Search Section -->
+    <section class="section packages-section" id="packages-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag"><i class="fa-solid fa-compass"></i> World-Class Portfolio</span>
+          <h2 class="section-title">Explore Curated Tour Packages</h2>
+          <p class="section-subtitle">
+            Filter our signature luxury expeditions by destination country, your preferred maximum budget, and guaranteed discount tiers.
+          </p>
+        </div>
+
+        <!-- Filter Control Dashboard -->
+        <div class="filter-dashboard" id="filter-dashboard">
+          <div class="filter-top-row">
+            <!-- Keyword Search -->
+            <div class="filter-control-group search-group">
+              <label for="search-input" class="filter-label"><i class="fa-solid fa-magnifying-glass"></i> Search Packages</label>
+              <div class="input-with-icon">
+                <input type="text" id="search-input" class="filter-input" placeholder="Search by destination, title, or experience...">
+                <button type="button" class="search-clear-btn" id="search-clear-btn" aria-label="Clear search" style="display: none;">
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Country Dropdown Filter -->
+            <div class="filter-control-group country-group">
+              <label for="country-filter" class="filter-label"><i class="fa-solid fa-earth-europe"></i> Filter by Country</label>
+              <select id="country-filter" class="filter-select">
+                <option value="all">All Countries (Worldwide)</option>
+                <!-- Populated dynamically / fallback included -->
+                <option value="Switzerland">Switzerland</option>
+                <option value="Japan">Japan</option>
+                <option value="Italy">Italy</option>
+                <option value="United Arab Emirates">United Arab Emirates</option>
+                <option value="Maldives">Maldives</option>
+                <option value="Iceland">Iceland</option>
+                <option value="France">France</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Greece">Greece</option>
+                <option value="Indonesia">Indonesia</option>
+              </select>
+            </div>
+
+            <!-- Discount Rate Filter -->
+            <div class="filter-control-group discount-group">
+              <label for="discount-filter" class="filter-label"><i class="fa-solid fa-tag"></i> Minimum Discount</label>
+              <select id="discount-filter" class="filter-select">
+                <option value="0">All Packages (No min discount)</option>
+                <option value="15">15%+ Discount</option>
+                <option value="20">20%+ Discount</option>
+                <option value="25">25%+ Discount</option>
+                <option value="30">30%+ Discount</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="filter-bottom-row">
+            <!-- Budget / Maximum Rate Slider -->
+            <div class="filter-control-group budget-group">
+              <div class="budget-label-row">
+                <label for="budget-slider" class="filter-label"><i class="fa-solid fa-coins"></i> Maximum Budget / Rate</label>
+                <span class="budget-display-badge" id="budget-value">$7,500</span>
+              </div>
+              <div class="budget-slider-wrapper">
+                <span class="budget-min-label">$1,500</span>
+                <input type="range" id="budget-slider" min="1500" max="7500" step="100" value="7500" class="budget-range">
+                <span class="budget-max-label">$7,500+</span>
+              </div>
+            </div>
+
+            <!-- Sort By Control -->
+            <div class="filter-control-group sort-group">
+              <label for="sort-select" class="filter-label"><i class="fa-solid fa-arrow-down-short-wide"></i> Sort By</label>
+              <select id="sort-select" class="filter-select">
+                <option value="featured">Featured First</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+                <option value="discount-high">Highest Discount %</option>
+                <option value="rating-high">Highest Rated</option>
+              </select>
+            </div>
+
+            <!-- Reset Filters Button -->
+            <div class="filter-control-group reset-group">
+              <button type="button" class="btn btn-outline-gold w-100" id="reset-filters-btn">
+                <i class="fa-solid fa-rotate-left"></i> Reset Filters
+              </button>
+            </div>
+          </div>
+
+          <!-- Active Filter Status & Count Bar -->
+          <div class="filter-status-bar" id="filter-status-bar">
+            <div class="results-meta">
+              <span class="results-badge" id="results-count">Loading packages...</span>
+              <span class="results-hint" id="active-filter-summary">All tour packages shown</span>
+            </div>
+            <div class="active-tag-pills" id="active-tag-pills"></div>
+          </div>
+        </div>
+
+        <!-- Packages Grid Container (Loaded Dynamically via script.js from packages.json) -->
+        <div class="packages-grid" id="packages-grid" aria-live="polite">
+          <div class="grid-loading-state">
+            <div class="spinner"></div>
+            <p>Loading luxury tour packages from packages.json...</p>
+          </div>
+        </div>
+
+        <!-- Empty State Container -->
+        <div class="empty-state-card" id="empty-state" style="display: none;">
+          <div class="empty-state-icon">
+            <i class="fa-solid fa-magnifying-glass-location"></i>
+          </div>
+          <h3 class="empty-state-title">No Matching Expeditions Found</h3>
+          <p class="empty-state-text">
+            We couldn't find any tour packages matching your current filter criteria. Try broadening your maximum budget or clearing some filters.
+          </p>
+          <button type="button" class="btn btn-gold" id="empty-reset-btn">
+            <i class="fa-solid fa-rotate-left"></i> Reset All Filters
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Rovista Baron Global -->
+    <section class="section why-us-section" id="why-us">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag"><i class="fa-solid fa-gem"></i> The Rovista Difference</span>
+          <h2 class="section-title">The Benchmark in Curated Travel</h2>
+          <p class="section-subtitle">
+            Every itinerary is personally orchestrated by veteran luxury travel designers to ensure effortless wonder, safety, and exclusivity.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-compass-drafting"></i>
+            </div>
+            <h3 class="feature-title">Bespoke Private Itineraries</h3>
+            <p class="feature-desc">
+              Tailored precisely around your personal rhythm, travel desires, and VIP preferences. No generic bus tours, only private access.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <h3 class="feature-title">24/7 Dedicated WhatsApp Concierge</h3>
+            <p class="feature-desc">
+              From airport lounge transfers to midnight restaurant reservations, your personal concierge is just one WhatsApp tap away anywhere on Earth.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-handshake-angle"></i>
+            </div>
+            <h3 class="feature-title">Direct Negotiated Partner Privileges</h3>
+            <p class="feature-desc">
+              Enjoy room upgrades, complimentary champagne, priority spa access, and transparent pricing with no hidden tourist markups.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-passport"></i>
+            </div>
+            <h3 class="feature-title">Seamless Global Visa &amp; Flight Logistics</h3>
+            <p class="feature-desc">
+              Our diplomatic visa specialists handle documentation requirements, fast-track customs clearance, and charter flight coordination.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Customer Testimonials Section -->
+    <section class="section testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag"><i class="fa-solid fa-star"></i> Verified Experiences</span>
+          <h2 class="section-title">What Our Travelers Say</h2>
+          <p class="section-subtitle">
+            Unfiltered feedback from esteemed travelers who entrusted their unforgettable milestones to Rovista Baron Global.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-quote">
+              "Booking our 10-day Japan trip through Rovista's WhatsApp concierge was an absolute revelation. We received personalized updates, the Ryokan in Kyoto was magical, and their guide was world-class."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Eleanor Vance">
+              </div>
+              <div class="author-details">
+                <h4 class="author-name">Eleanor Vance</h4>
+                <span class="author-info">Traveled to Kyoto &amp; Tokyo • London, UK</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-quote">
+              "The Swiss Alpine Glacier tour exceeded every expectation. The 25% discount made an ultra-luxury journey accessible, and having 24/7 WhatsApp support gave our family absolute peace of mind."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Marcus Sterling">
+              </div>
+              <div class="author-details">
+                <h4 class="author-name">Marcus Sterling</h4>
+                <span class="author-info">Traveled to Zermatt &amp; St. Moritz • New York, USA</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-quote">
+              "Our honeymoon in the Maldives overwater villa was pure paradise. Rovista arranged complimentary champagne and a sunset dolphin cruise. Truly baron-grade hospitality!"
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=150&q=80" alt="Sophie & Liam Chen">
+              </div>
+              <div class="author-details">
+                <h4 class="author-name">Sophie &amp; Liam Chen</h4>
+                <span class="author-info">Traveled to Maldives Sanctuary • Sydney, Australia</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WhatsApp Contact Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-card-container">
+          <div class="contact-info-col">
+            <span class="section-tag"><i class="fa-brands fa-whatsapp"></i> Instant Direct Connection</span>
+            <h2 class="contact-title">Let’s Curate Your Next Global Journey</h2>
+            <p class="contact-desc">
+              Skip traditional slow email inquiries and impersonal waiting queues. Connect directly with a Rovista Baron travel designer on WhatsApp for instant itinerary previews, customized quotes, and VIP perks.
+            </p>
+
+            <div class="contact-features-list">
+              <div class="contact-feature-item">
+                <div class="cf-icon"><i class="fa-solid fa-bolt"></i></div>
+                <div>
+                  <h4>Under 5-Minute Direct Response</h4>
+                  <p>Our senior travel specialists are active 24/7 across all global timezones.</p>
+                </div>
+              </div>
+              <div class="contact-feature-item">
+                <div class="cf-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+                <div>
+                  <h4>Complimentary Custom Itinerary PDF</h4>
+                  <p>Receive a bespoke day-by-day travel plan and pricing preview via WhatsApp.</p>
+                </div>
+              </div>
+              <div class="contact-feature-item">
+                <div class="cf-icon"><i class="fa-solid fa-phone-volume"></i></div>
+                <div>
+                  <h4>Direct WhatsApp Hotline</h4>
+                  <p><strong>+1 (800) 768-4782</strong> / international concierge desk.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="office-locations-row">
+              <div class="office-city"><i class="fa-solid fa-location-dot"></i> Zurich</div>
+              <div class="office-city"><i class="fa-solid fa-location-dot"></i> Dubai</div>
+              <div class="office-city"><i class="fa-solid fa-location-dot"></i> Singapore</div>
+              <div class="office-city"><i class="fa-solid fa-location-dot"></i> New York</div>
+            </div>
+          </div>
+
+          <!-- Interactive WhatsApp Inquiry Generator -->
+          <div class="contact-form-col">
+            <div class="whatsapp-form-wrapper">
+              <div class="form-header">
+                <div class="form-header-badge">
+                  <i class="fa-brands fa-whatsapp"></i> WhatsApp Concierge Dispatch
+                </div>
+                <h3>Personalize Your Travel Inquiry</h3>
+                <p>Fill out your details below to generate a direct pre-filled WhatsApp message.</p>
+              </div>
+
+              <form id="whatsapp-inquiry-form" class="inquiry-form" onsubmit="event.preventDefault();">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="contact-name">Your Full Name <span class="required">*</span></label>
+                    <input type="text" id="contact-name" class="form-control" placeholder="e.g. Lord Alexander Wright" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="contact-phone">WhatsApp Number (Optional)</label>
+                    <input type="tel" id="contact-phone" class="form-control" placeholder="e.g. +1 555 123 4567">
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="contact-destination">Destination / Country of Interest <span class="required">*</span></label>
+                    <select id="contact-destination" class="form-control" required>
+                      <option value="">Select a Destination...</option>
+                      <option value="Switzerland (Alpine Grand Luxury)">Switzerland (Alpine Grand Luxury)</option>
+                      <option value="Japan (Kyoto & Tokyo Odyssey)">Japan (Kyoto & Tokyo Odyssey)</option>
+                      <option value="Italy (Amalfi Coast & Capri)">Italy (Amalfi Coast & Capri)</option>
+                      <option value="UAE (Dubai Royal Desert & Yacht)">UAE (Dubai Royal Desert & Yacht)</option>
+                      <option value="Maldives (Overwater Sanctuary)">Maldives (Overwater Sanctuary)</option>
+                      <option value="Iceland (Aurora & Glacier Expedition)">Iceland (Aurora & Glacier Expedition)</option>
+                      <option value="France (Parisian Elegance & Castles)">France (Parisian Elegance & Castles)</option>
+                      <option value="Kenya (Serengeti Luxury Safari)">Kenya (Serengeti Luxury Safari)</option>
+                      <option value="Greece (Santorini Caldera Sunset)">Greece (Santorini Caldera Sunset)</option>
+                      <option value="Indonesia (Bali Wellness Sanctuary)">Indonesia (Bali Wellness Sanctuary)</option>
+                      <option value="Custom Multi-Country Expedition">Custom Multi-Country Expedition</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="contact-travelers">Number of Travelers</label>
+                    <select id="contact-travelers" class="form-control">
+                      <option value="Solo Traveler">Solo Traveler (1 person)</option>
+                      <option value="Couple / 2 Guests" selected>Couple / 2 Guests</option>
+                      <option value="Small Family (3-4 Guests)">Small Family (3-4 Guests)</option>
+                      <option value="Private VIP Group (5+ Guests)">Private VIP Group (5+ Guests)</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="contact-date">Preferred Travel Month / Dates</label>
+                    <input type="text" id="contact-date" class="form-control" placeholder="e.g. Next Month / Autumn 2026">
+                  </div>
+                  <div class="form-group">
+                    <label for="contact-budget">Estimated Budget Per Person</label>
+                    <select id="contact-budget" class="form-control">
+                      <option value="No Specific Budget">Flexible / Best Available Luxury</option>
+                      <option value="$2,000 - $3,500">$2,000 - $3,500</option>
+                      <option value="$3,500 - $5,000">$3,500 - $5,000</option>
+                      <option value="$5,000 - $8,000">$5,000 - $8,000</option>
+                      <option value="$8,000+ VIP Ultra-Luxury">$8,000+ VIP Ultra-Luxury</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-message">Special Wishes &amp; Inclusions</label>
+                  <textarea id="contact-message" class="form-control" rows="3" placeholder="Tell us about special occasions (honeymoon, anniversary), private flight requirements, dietary preferences..."></textarea>
+                </div>
+
+                <!-- Live Message Preview Box -->
+                <div class="whatsapp-preview-box">
+                  <div class="preview-header">
+                    <i class="fa-brands fa-whatsapp"></i> <span>Message Preview Sent to Rovista Concierge:</span>
+                  </div>
+                  <p class="preview-text" id="whatsapp-preview-text">
+                    "Hello Rovista Baron Global, I would like to inquire about planning a bespoke luxury expedition..."
+                  </p>
+                </div>
+
+                <button type="submit" class="btn btn-whatsapp btn-lg w-100" id="send-whatsapp-btn">
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <span>Launch WhatsApp Chat with Concierge</span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Package Details Interactive Modal -->
+  <div class="modal-overlay" id="package-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-package-title">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      
+      <div class="modal-image-wrapper">
+        <img src="" alt="" id="modal-image" class="modal-image">
+        <div class="modal-image-overlay">
+          <span class="modal-discount-badge" id="modal-discount-badge"></span>
+          <span class="modal-country-badge" id="modal-country-badge"><i class="fa-solid fa-location-dot"></i> <span id="modal-country-text"></span></span>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-meta-row">
+          <div class="modal-rating" id="modal-rating">
+            <i class="fa-solid fa-star"></i>
+            <span id="modal-rating-score">4.95</span>
+            <span class="modal-reviews-count" id="modal-reviews-count">(120 reviews)</span>
+          </div>
+          <div class="modal-duration" id="modal-duration">
+            <i class="fa-regular fa-clock"></i> <span id="modal-duration-text"></span>
+          </div>
+        </div>
+
+        <h3 class="modal-title" id="modal-package-title"></h3>
+        <p class="modal-description" id="modal-description"></p>
+
+        <div class="modal-highlights-container">
+          <h4 class="modal-section-heading"><i class="fa-solid fa-crown"></i> Signature Inclusions:</h4>
+          <ul class="modal-highlights-list" id="modal-highlights-list"></ul>
+        </div>
+
+        <div class="modal-pricing-box">
+          <div class="pricing-col">
+            <span class="price-label">Exclusive Privilege Rate:</span>
+            <div class="modal-price-values">
+              <span class="modal-discount-rate" id="modal-discount-rate"></span>
+              <span class="modal-base-rate" id="modal-base-rate"></span>
+            </div>
+            <span class="modal-savings-note" id="modal-savings-note">You save $1,200</span>
+          </div>
+
+          <div class="modal-action-col">
+            <a href="#" id="modal-whatsapp-cta" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg">
+              <i class="fa-brands fa-whatsapp"></i> Book via WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Persistent Floating WhatsApp Button -->
+  <div class="floating-whatsapp-container" id="floating-whatsapp-container">
+    <div class="floating-tooltip" id="floating-tooltip">
+      <div class="tooltip-header">
+        <span class="online-indicator"></span>
+        <strong>Rovista Concierge</strong>
+      </div>
+      <p>Have questions about an itinerary? Chat with us live!</p>
+    </div>
+    <a href="https://wa.me/18007684782?text=Hello%20Rovista%20Baron%20Global,%20I%20would%20like%20to%20inquire%20about%20your%20luxury%20tour%20packages%20and%20latest%20offers." 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="floating-whatsapp-btn" 
+       id="floating-whatsapp-btn"
+       aria-label="Direct WhatsApp Concierge Chat">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span class="pulse-ring"></span>
+      <span class="pulse-ring-outer"></span>
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-col brand-col">
+        <div class="logo-mark footer-logo">
+          <i class="fa-solid fa-compass"></i>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">ROVISTA BARON</span>
+          <span class="logo-sub">GLOBAL EXPEDITIONS</span>
+        </div>
+        <p class="footer-tagline">
+          The international gold standard in curated luxury journeys, tailor-made private expeditions, and 5-star VIP hospitality.
+        </p>
+        <div class="footer-badges">
+          <span><i class="fa-solid fa-shield-halved"></i> IATA Accredited Partner</span>
+          <span><i class="fa-solid fa-award"></i> World Luxury Travel Guild</span>
+        </div>
+      </div>
+
+      <div class="footer-col links-col">
+        <h4 class="footer-heading">Destinations</h4>
+        <ul class="footer-links">
+          <li><a href="#packages-section" data-country="Switzerland">Switzerland Chalets &amp; Alps</a></li>
+          <li><a href="#packages-section" data-country="Japan">Japan Ryokans &amp; Kyoto</a></li>
+          <li><a href="#packages-section" data-country="Italy">Amalfi &amp; Capri Yachting</a></li>
+          <li><a href="#packages-section" data-country="Maldives">Maldives Ocean Sanctuaries</a></li>
+          <li><a href="#packages-section" data-country="United Arab Emirates">Dubai Sky &amp; Royal Desert</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col links-col">
+        <h4 class="footer-heading">Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#highlights">Latest Flash Offers</a></li>
+          <li><a href="#packages-section">Curated Tour Packages</a></li>
+          <li><a href="#why-us">The Rovista Difference</a></li>
+          <li><a href="#testimonials">Traveler Reviews</a></li>
+          <li><a href="#contact">WhatsApp Concierge Desk</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col contact-col">
+        <h4 class="footer-heading">Direct Concierge</h4>
+        <p class="footer-contact-item">
+          <i class="fa-brands fa-whatsapp"></i>
+          <a href="https://wa.me/18007684782" target="_blank" rel="noopener noreferrer">+1 (800) 768-4782 (WhatsApp)</a>
+        </p>
+        <p class="footer-contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <span>concierge@rovistabaron.com</span>
+        </p>
+        <p class="footer-contact-item">
+          <i class="fa-solid fa-clock"></i>
+          <span>24/7 Global Dispatch &amp; VIP Assistance</span>
+        </p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://wa.me/18007684782" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2026 ROVISTA BARON GLOBAL. All Rights Reserved. Luxury Expeditions &amp; Private Tours.</p>
+        <p class="footer-disclaimer">All rates and discounts dynamically rendered from packages.json &amp; highlights.json.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>

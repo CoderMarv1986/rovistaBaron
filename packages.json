@@ -1,0 +1,216 @@
+[
+  {
+    "id": "pkg-1",
+    "title": "Swiss Alpine Grand Luxury Tour",
+    "country": "Switzerland",
+    "image": "https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=1000&q=80",
+    "baseRate": 4800,
+    "discountRate": 3600,
+    "discountPercent": 25,
+    "duration": "10 Days / 9 Nights",
+    "description": "Experience first-class Glacier Express scenic train journeys, 5-star mountain chalet stays in Zermatt, and panoramic views of the iconic Matterhorn.",
+    "rating": 4.9,
+    "reviewsCount": 142,
+    "category": "Luxury & Scenic",
+    "highlights": [
+      "First-Class Glacier Express Pass",
+      "5-Star Alpine Resort in Zermatt",
+      "Private Matterhorn Helicopter Tour",
+      "Gourmet Swiss Fondue & Wine Tasting",      
+	  "Private Geisha Ceremony in Gion",
+      "Bullet Train Shinkansen Green Car",
+      "Michelin-Starred Kaiseki Dining",
+      "Private Mount Fuji Day Tour"
+    ],
+    "featured": true
+  },
+  {
+    "id": "pkg-2",
+    "title": "Kyoto Imperial & Tokyo Neon Odyssey",
+    "country": "Japan",
+    "image": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1000&q=80",
+    "baseRate": 4200,
+    "discountRate": 3150,
+    "discountPercent": 25,
+    "duration": "10 Days / 9 Nights",
+    "description": "Immerse yourself in authentic ryokan onsens, ancient bamboo groves, traditional private tea ceremonies, and ultra-modern culinary discoveries in Ginza.",
+    "rating": 4.95,
+    "reviewsCount": 218,
+    "category": "Culture & Heritage",
+    "highlights": [
+      "Private Geisha Ceremony in Gion",
+      "Bullet Train Shinkansen Green Car",
+      "Michelin-Starred Kaiseki Dining",
+      "Private Mount Fuji Day Tour"
+    ],
+    "featured": true
+  },
+  {
+    "id": "pkg-3",
+    "title": "Amalfi Coast & Capri Yacht Escapade",
+    "country": "Italy",
+    "image": "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1000&q=80",
+    "baseRate": 5500,
+    "discountRate": 4125,
+    "discountPercent": 25,
+    "duration": "7 Days / 6 Nights",
+    "description": "Sail past cliffs in Positano aboard a chartered private yacht, explore cliffside lemon groves, and stay in cliff-top cliff villas overlooking the Tyrrhenian Sea.",
+    "rating": 4.88,
+    "reviewsCount": 97,
+    "category": "Coastal Romance",
+    "highlights": [
+      "Private Riva Yacht Cruise to Capri",
+      "Cliffside Luxury Suite in Positano",
+      "Exclusive Vineyard Tasting in Ravello",
+      "Private Lemon Grove Cooking Class"
+    ],
+    "featured": true
+  },
+  {
+    "id": "pkg-4",
+    "title": "Dubai Royal Desert & Skyline Retreat",
+    "country": "United Arab Emirates",
+    "image": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1000&q=80",
+    "baseRate": 3400,
+    "discountRate": 2380,
+    "discountPercent": 30,
+    "duration": "6 Days / 5 Nights",
+    "description": "Live like royalty with private desert glamping, VIP Burj Khalifa penthouse lounge access, private yacht around Dubai Marina, and luxury desert safaris.",
+    "rating": 4.85,
+    "reviewsCount": 165,
+    "category": "Modern Luxury",
+    "highlights": [
+      "Private VIP Desert Safari & Falconry",
+      "Burj Al Arab Afternoon Tea",
+      "Sunset Yacht Charter at Marina",
+      "Chauffeured Rolls Royce Airport Transfers"
+    ],
+    "featured": false
+  },
+  {
+    "id": "pkg-5",
+    "title": "Maldives Overwater Sanctuary Paradise",
+    "country": "Maldives",
+    "image": "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=1000&q=80",
+    "baseRate": 6800,
+    "discountRate": 4760,
+    "discountPercent": 30,
+    "duration": "6 Days / 5 Nights",
+    "description": "Unwind in an exclusive overwater villa with private glass-bottom floors, private infinity pool, coral reef dolphin cruises, and underwater restaurant dining.",
+    "rating": 4.98,
+    "reviewsCount": 310,
+    "category": "Tropical Honeymoon",
+    "highlights": [
+      "All-Inclusive Ultra-Luxury Villa",
+      "Scenic Seaplane Return Transfers",
+      "Undersea Dining Experience",
+      "Private Manta Ray Snorkeling Safari"
+    ],
+    "featured": true
+  },
+  {
+    "id": "pkg-6",
+    "title": "Icelandic Aurora & Glacier Expedition",
+    "country": "Iceland",
+    "image": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1000&q=80",
+    "baseRate": 3900,
+    "discountRate": 3120,
+    "discountPercent": 20,
+    "duration": "7 Days / 6 Nights",
+    "description": "Witness the mesmerizing Northern Lights, explore blue ice crystal caves beneath Vatnajökull, and soak in geothermal mineral spas under polar skies.",
+    "rating": 4.92,
+    "reviewsCount": 88,
+    "category": "Adventure & Nature",
+    "highlights": [
+      "Guided Northern Lights Superjeep Tour",
+      "Private Blue Lagoon Retreat Spa",
+      "Vatnajökull Ice Cave Walk",
+      "Golden Circle Geysir & Waterfalls"
+    ],
+    "featured": false
+  },
+  {
+    "id": "pkg-7",
+    "title": "Parisian Elegance & Loire Valley Castles",
+    "country": "France",
+    "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1000&q=80",
+    "baseRate": 4600,
+    "discountRate": 3910,
+    "discountPercent": 15,
+    "duration": "8 Days / 7 Nights",
+    "description": "Stroll down the Champs-Élysées, take an after-hours private tour of the Louvre, and wander through fairytale Renaissance châteaux in the historic Loire Valley.",
+    "rating": 4.87,
+    "reviewsCount": 112,
+    "category": "Culture & Heritage",
+    "highlights": [
+      "Private VIP Louvre After-Hours Tour",
+      "Helicopter Flight Over Loire Châteaux",
+      "Sommelier Champagne & Cellar Tour",
+      "Eiffel Tower Michelin Star Dinner"
+    ],
+    "featured": false
+  },
+  {
+    "id": "pkg-8",
+    "title": "Serengeti Great Migration Luxury Safari",
+    "country": "Kenya",
+    "image": "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1000&q=80",
+    "baseRate": 6200,
+    "discountRate": 4960,
+    "discountPercent": 20,
+    "duration": "9 Days / 8 Nights",
+    "description": "Fly into untamed savannahs for front-row views of the Great Wildebeest Migration, staying in opulent tented camps with personal rangers and hot air balloon rides.",
+    "rating": 4.96,
+    "reviewsCount": 74,
+    "category": "Wildlife Safari",
+    "highlights": [
+      "Sunrise Hot Air Balloon with Champagne",
+      "Daily 4x4 Private Game Drives",
+      "Five-Star Tented Wilderness Lodge",
+      "Maasai Cultural Elder Encounter"
+    ],
+    "featured": true
+  },
+  {
+    "id": "pkg-9",
+    "title": "Santorini Caldera Sunset & Aegean Cruise",
+    "country": "Greece",
+    "image": "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=1000&q=80",
+    "baseRate": 3600,
+    "discountRate": 2700,
+    "discountPercent": 25,
+    "duration": "7 Days / 6 Nights",
+    "description": "Wake up to white-washed cliffside architecture in Oia, dive into volcanic hot springs, and savor Greek gourmet gastronomy under mesmerizing Aegean sunsets.",
+    "rating": 4.89,
+    "reviewsCount": 139,
+    "category": "Coastal Romance",
+    "highlights": [
+      "Caldera Infinity Suite in Oia",
+      "Catamaran Sunset Cruise with BBQ",
+      "Private Santorini Wine Road Trip",
+      "Helicopter Transfer from Athens"
+    ],
+    "featured": false
+  },
+  {
+    "id": "pkg-10",
+    "title": "Bali Spiritual Wellness & Rainforest Haven",
+    "country": "Indonesia",
+    "image": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1000&q=80",
+    "baseRate": 2800,
+    "discountRate": 1960,
+    "discountPercent": 30,
+    "duration": "8 Days / 7 Nights",
+    "description": "Reconnect your senses in an Ubud jungle pool villa, partake in traditional water purification blessings, and explore emerald green rice terraces and coastal temples.",
+    "rating": 4.91,
+    "reviewsCount": 184,
+    "category": "Wellness & Eco",
+    "highlights": [
+      "Private River-View Jungle Pool Villa",
+      "Daily Holistic Ayurvedic Treatments",
+      "Tirta Empul Water Purification Ritual",
+      "Mount Batur Sunrise Trekking & Breakfast"
+    ],
+    "featured": false
+  }
+]

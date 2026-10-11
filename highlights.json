@@ -1,0 +1,62 @@
+[
+  {
+    "id": "offer-1",
+    "badge": "🔥 Flash Offer • 35% OFF",
+    "title": "Swiss St. Moritz & Matterhorn Winter Extravaganza",
+    "country": "Switzerland",
+    "tagline": "Limited to First 15 VIP Bookings This Season",
+    "description": "Indulge in 5-star ski chalet suites, unlimited first-class panoramic mountain rail passes, and private Michelin-starred chef dinners amidst snow-capped peaks.",
+    "image": "https://images.unsplash.com/photo-1502784444187-359ac186c5bb?auto=format&fit=crop&w=1200&q=80",
+    "baseRate": 5200,
+    "discountRate": 3380,
+    "discountPercent": 35,
+    "duration": "7 Days / 6 Nights",
+    "validUntil": "Valid till end of month",
+    "packageId": "pkg-1"
+  },
+  {
+    "id": "offer-2",
+    "badge": "✨ Signature Luxury • 30% OFF",
+    "title": "Maldives Floating Ocean Villa All-Inclusive",
+    "country": "Maldives",
+    "tagline": "Complimentary Seaplane Upgrade + Undersea Spa",
+    "description": "Step directly into turquoise lagoons with overwater slide villas, personalized 24/7 butler service, private sunset yacht cruises, and complimentary diving gear.",
+    "image": "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=1200&q=80",
+    "baseRate": 6800,
+    "discountRate": 4760,
+    "discountPercent": 30,
+    "duration": "6 Days / 5 Nights",
+    "validUntil": "Only 4 Villas Remaining",
+    "packageId": "pkg-5"
+  },
+  {
+    "id": "offer-3",
+    "badge": "🌸 Seasonal Special • 28% OFF",
+    "title": "Kyoto Cherry Blossom & Mt. Fuji Royal Trail",
+    "country": "Japan",
+    "tagline": "Private Onsen Ryokan + Shinkansen Green Car",
+    "description": "Witness Japan's iconic sakura blooms in tranquil temple gardens with private VIP guides, traditional Kaiseki banquet ceremonies, and luxury Tokyo stays.",
+    "image": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1200&q=80",
+    "baseRate": 4500,
+    "discountRate": 3240,
+    "discountPercent": 28,
+    "duration": "9 Days / 8 Nights",
+    "validUntil": "Booking Window Closes Soon",
+    "packageId": "pkg-2"
+  },
+  {
+    "id": "offer-4",
+    "badge": "⚡ Exclusive Escape • 32% OFF",
+    "title": "Dubai Royal Desert Pavilion & Marina Superyacht",
+    "country": "United Arab Emirates",
+    "tagline": "VIP Burj Khalifa Lounge & Rolls Royce Chauffeur",
+    "description": "Combine the futuristic opulence of Dubai's skyline with private desert sunset dining under stars, bespoke camel treks, and luxury marina cruising.",
+    "image": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=80",
+    "baseRate": 3700,
+    "discountRate": 2516,
+    "discountPercent": 32,
+    "duration": "5 Days / 4 Nights",
+    "validUntil": "Exclusive Weekend Promo",
+    "packageId": "pkg-4"
+  }
+]
