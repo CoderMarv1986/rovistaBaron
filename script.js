@@ -27,8 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
     sortBy: 'featured'
   };
 
-  // WhatsApp Hotline Configuration
-  const WHATSAPP_PHONE = '18007684782';
+  // WhatsApp Hotline Configuration (Recipient: 6282434143 / +91 62824 34143)
+  const WHATSAPP_PHONE = '916282434143';
 
   /* --------------------------------------------------------------------------
      1. Navigation, Sticky Header & Smooth Scrolling
