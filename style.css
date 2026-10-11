@@ -81,6 +81,9 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: var(--header-height);
   -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
 }
 
 body {
@@ -89,6 +92,8 @@ body {
   color: var(--text-primary);
   line-height: 1.6;
   overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
   position: relative;
   background-image: 
     radial-gradient(circle at 10% 20%, rgba(245, 158, 11, 0.035) 0%, transparent 40%),
@@ -130,8 +135,9 @@ ul {
   max-width: var(--container-width);
   margin-left: auto;
   margin-right: auto;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: clamp(12px, 3vw, 24px);
+  padding-right: clamp(12px, 3vw, 24px);
+  box-sizing: border-box;
 }
 
 .w-100 {
@@ -156,7 +162,17 @@ ul {
   font-size: 0.95rem;
   letter-spacing: 0.02em;
   transition: all var(--transition-normal);
-  white-space: nowrap;
+  max-width: 100%;
+  box-sizing: border-box;
+  white-space: normal;
+  word-break: break-word;
+  text-align: center;
+}
+
+.btn span {
+  display: inline;
+  white-space: normal;
+  word-break: break-word;
 }
 
 .btn-sm {
@@ -165,8 +181,8 @@ ul {
 }
 
 .btn-lg {
-  padding: 15px 32px;
-  font-size: 1.05rem;
+  padding: 14px 28px;
+  font-size: 1rem;
 }
 
 .btn-gold {
@@ -1228,8 +1244,11 @@ ul {
    -------------------------------------------------------------------------- */
 .packages-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
   gap: 32px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .grid-loading-state {
@@ -1537,8 +1556,11 @@ ul {
 
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
   gap: 28px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .feature-card {
@@ -1548,6 +1570,9 @@ ul {
   border-radius: var(--border-radius-lg);
   padding: 36px 28px;
   transition: transform var(--transition-normal), border-color var(--transition-normal);
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .feature-card:hover {
@@ -1576,12 +1601,14 @@ ul {
   font-weight: 700;
   margin-bottom: 12px;
   color: #ffffff;
+  word-break: break-word;
 }
 
 .feature-desc {
   font-size: 0.92rem;
   color: var(--text-secondary);
   line-height: 1.65;
+  word-break: break-word;
 }
 
 /* --------------------------------------------------------------------------
@@ -1593,8 +1620,11 @@ ul {
 
 .testimonials-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
   gap: 28px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .testimonial-card {
@@ -1606,6 +1636,9 @@ ul {
   display: flex;
   flex-direction: column;
   transition: transform var(--transition-normal), border-color var(--transition-normal);
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .testimonial-card:hover {
@@ -1662,52 +1695,84 @@ ul {
    -------------------------------------------------------------------------- */
 .contact-section {
   background: #060a14;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 .contact-card-container {
   display: grid;
   grid-template-columns: 1fr 1.15fr;
-  gap: clamp(24px, 4vw, 48px);
+  gap: clamp(20px, 3.5vw, 48px);
   background: rgba(14, 25, 48, 0.65);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
   border: 1px solid var(--border-glass-bright);
   border-radius: clamp(16px, 3vw, var(--border-radius-lg));
-  padding: clamp(20px, 4vw, 50px);
+  padding: clamp(18px, 3.5vw, 48px);
   box-shadow: var(--shadow-lg);
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .contact-info-col {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .contact-title {
   font-family: var(--font-heading);
-  font-size: clamp(1.5rem, 3.5vw, 2.5rem);
+  font-size: clamp(1.4rem, 3.5vw, 2.5rem);
   font-weight: 700;
   line-height: 1.25;
   margin: 12px 0 14px 0;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .contact-desc {
-  font-size: clamp(0.88rem, 2vw, 1rem);
+  font-size: clamp(0.86rem, 2vw, 1rem);
   color: var(--text-secondary);
   line-height: 1.65;
-  margin-bottom: 28px;
+  margin-bottom: 26px;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .contact-features-list {
   display: flex;
   flex-direction: column;
   gap: 18px;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
 }
 
 .contact-feature-item {
   display: flex;
   gap: 14px;
   align-items: flex-start;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.contact-feature-item > div:last-child {
+  min-width: 0;
+  max-width: 100%;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .cf-icon {
@@ -1725,16 +1790,18 @@ ul {
 }
 
 .contact-feature-item h4 {
-  font-size: clamp(0.9rem, 2.5vw, 0.98rem);
+  font-size: clamp(0.88rem, 2.5vw, 0.98rem);
   font-weight: 700;
   color: #ffffff;
   margin-bottom: 3px;
+  word-break: break-word;
 }
 
 .contact-feature-item p {
-  font-size: clamp(0.8rem, 2.2vw, 0.86rem);
+  font-size: clamp(0.78rem, 2.2vw, 0.86rem);
   color: var(--text-secondary);
   line-height: 1.5;
+  word-break: break-word;
 }
 
 .office-locations-row {
@@ -1742,8 +1809,12 @@ ul {
   flex-wrap: wrap;
   gap: 8px;
   margin-top: auto;
-  padding-top: 20px;
+  padding-top: 18px;
   border-top: 1px solid var(--border-glass);
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
 }
 
 .office-city {
@@ -1755,10 +1826,22 @@ ul {
   background: rgba(255, 255, 255, 0.04);
   padding: 5px 12px;
   border-radius: var(--border-radius-full);
+  max-width: 100%;
+  white-space: nowrap;
 }
 
 .office-city i {
   color: var(--gold-light);
+}
+
+.contact-form-col {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 /* WhatsApp Inquiry Form Styling */
@@ -1766,12 +1849,19 @@ ul {
   background: rgba(9, 16, 32, 0.85);
   border: 1px solid var(--border-glass-bright);
   border-radius: clamp(12px, 2.5vw, var(--border-radius-md));
-  padding: clamp(18px, 4vw, 34px);
+  padding: clamp(16px, 3.5vw, 32px);
   box-shadow: var(--shadow-md);
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .form-header {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
+  width: 100%;
+  min-width: 0;
 }
 
 .form-header-badge {
@@ -1784,42 +1874,59 @@ ul {
   text-transform: uppercase;
   letter-spacing: 0.06em;
   margin-bottom: 8px;
+  max-width: 100%;
 }
 
 .form-header h3 {
   font-family: var(--font-heading);
-  font-size: clamp(1.2rem, 3vw, 1.45rem);
+  font-size: clamp(1.15rem, 3vw, 1.45rem);
   color: #ffffff;
   margin-bottom: 6px;
+  word-break: break-word;
 }
 
 .form-header p {
-  font-size: clamp(0.82rem, 2vw, 0.88rem);
+  font-size: clamp(0.8rem, 2vw, 0.88rem);
   color: var(--text-secondary);
+  word-break: break-word;
 }
 
 .inquiry-form {
   display: flex;
   flex-direction: column;
   gap: 14px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
 }
 
 .form-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 14px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
   gap: 6px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .form-group label {
   font-size: 0.8rem;
   font-weight: 600;
   color: var(--text-secondary);
+  word-break: break-word;
 }
 
 .required {
@@ -1829,16 +1936,25 @@ ul {
 .form-control {
   width: 100%;
   max-width: 100%;
+  min-width: 0;
   box-sizing: border-box;
   background: rgba(5, 9, 18, 0.7);
   border: 1px solid var(--border-glass);
   border-radius: var(--border-radius-sm);
-  padding: 12px 14px;
+  padding: 11px 13px;
   color: #ffffff;
   font-size: 16px; /* 16px minimum prevents iOS Safari auto-zooming on focus */
   line-height: 1.4;
-  min-height: 48px;
+  min-height: 46px;
   transition: all var(--transition-fast);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+select.form-control {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .form-control:focus {
@@ -1853,7 +1969,7 @@ ul {
 
 textarea.form-control {
   resize: vertical;
-  min-height: 85px;
+  min-height: 80px;
 }
 
 /* WhatsApp Live Preview Box */
@@ -1861,10 +1977,15 @@ textarea.form-control {
   background: rgba(37, 211, 102, 0.06);
   border: 1px dashed rgba(37, 211, 102, 0.35);
   border-radius: var(--border-radius-sm);
-  padding: 12px 16px;
+  padding: 12px 14px;
   margin: 4px 0 8px 0;
   word-break: break-word;
-  overflow-wrap: break-word;
+  overflow-wrap: anywhere;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .preview-header {
@@ -1877,6 +1998,7 @@ textarea.form-control {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   margin-bottom: 6px;
+  word-break: break-word;
 }
 
 .preview-text {
@@ -1885,16 +2007,34 @@ textarea.form-control {
   font-style: italic;
   line-height: 1.5;
   white-space: pre-wrap;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
 }
 
 #send-whatsapp-btn {
-  min-height: 50px;
-  font-size: clamp(0.92rem, 2.5vw, 1.05rem);
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  min-height: 48px;
+  font-size: clamp(0.88rem, 2.2vw, 1.02rem);
   white-space: normal;
+  word-break: break-word;
   text-align: center;
   justify-content: center;
   line-height: 1.35;
-  padding: 14px 20px;
+  padding: 12px 16px;
+}
+
+#send-whatsapp-btn span {
+  white-space: normal;
+  word-break: break-word;
+  line-height: 1.35;
+  display: inline;
 }
 
 /* --------------------------------------------------------------------------
@@ -1903,18 +2043,25 @@ textarea.form-control {
 .modal-overlay {
   position: fixed;
   inset: 0;
+  width: 100%;
+  max-width: 100vw;
+  height: 100%;
+  max-height: 100vh;
   background: rgba(3, 6, 12, 0.88);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   z-index: 1000;
   display: flex;
-  align-items: center;
+  align-items: flex-start; /* CRITICAL: Never center vertically on scrollable overlay to prevent top clipping */
   justify-content: center;
-  padding: clamp(10px, 3vw, 24px);
+  padding: clamp(12px, 3vh, 32px) clamp(8px, 2.5vw, 20px);
   opacity: 0;
   visibility: hidden;
-  transition: all var(--transition-normal);
+  transition: opacity var(--transition-normal), visibility var(--transition-normal);
   overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  box-sizing: border-box;
 }
 
 .modal-overlay.open {
@@ -1928,14 +2075,14 @@ textarea.form-control {
   border-radius: clamp(14px, 3vw, 22px);
   max-width: 680px;
   width: 100%;
-  max-height: 92vh;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
+  min-width: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
   position: relative;
   box-shadow: 0 25px 60px rgba(0, 0, 0, 0.85);
   transform: translateY(20px) scale(0.97);
   transition: transform var(--transition-normal);
-  margin: auto;
+  margin: auto 0;
 }
 
 .modal-overlay.open .modal-card {
@@ -1959,6 +2106,7 @@ textarea.form-control {
   font-size: 1.15rem;
   z-index: 10;
   transition: all var(--transition-fast);
+  cursor: pointer;
 }
 
 .modal-close-btn:hover {
@@ -1970,7 +2118,9 @@ textarea.form-control {
 .modal-image-wrapper {
   position: relative;
   height: clamp(180px, 32vw, 290px);
-  min-height: 170px;
+  min-height: 160px;
+  width: 100%;
+  max-width: 100%;
   overflow: hidden;
   background: #070b14;
 }
@@ -1979,6 +2129,7 @@ textarea.form-control {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 .modal-image-overlay {
@@ -1991,6 +2142,7 @@ textarea.form-control {
   flex-wrap: wrap;
   gap: 8px;
   padding: clamp(12px, 3vw, 20px);
+  box-sizing: border-box;
 }
 
 .modal-discount-badge {
@@ -2001,6 +2153,7 @@ textarea.form-control {
   padding: 4px 12px;
   border-radius: var(--border-radius-full);
   box-shadow: 0 4px 12px rgba(239, 68, 68, 0.4);
+  max-width: 100%;
 }
 
 .modal-country-badge {
@@ -2015,10 +2168,16 @@ textarea.form-control {
   display: inline-flex;
   align-items: center;
   gap: 5px;
+  max-width: 100%;
 }
 
 .modal-body {
-  padding: clamp(16px, 4vw, 28px);
+  padding: clamp(14px, 3.5vw, 28px);
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .modal-meta-row {
@@ -2028,6 +2187,8 @@ textarea.form-control {
   flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 12px;
+  width: 100%;
+  min-width: 0;
 }
 
 .modal-rating {
@@ -2055,26 +2216,38 @@ textarea.form-control {
 
 .modal-title {
   font-family: var(--font-heading);
-  font-size: clamp(1.25rem, 4vw, 1.65rem);
+  font-size: clamp(1.2rem, 3.8vw, 1.65rem);
   font-weight: 700;
   line-height: 1.3;
   margin-bottom: 12px;
   word-break: break-word;
+  overflow-wrap: break-word;
+  width: 100%;
+  min-width: 0;
 }
 
 .modal-description {
-  font-size: clamp(0.86rem, 2vw, 0.94rem);
+  font-size: clamp(0.85rem, 2vw, 0.94rem);
   color: var(--text-secondary);
   line-height: 1.6;
   margin-bottom: 20px;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  width: 100%;
+  min-width: 0;
 }
 
 .modal-highlights-container {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid var(--border-glass);
   border-radius: 12px;
-  padding: clamp(14px, 3vw, 20px);
+  padding: clamp(12px, 3vw, 20px);
   margin-bottom: 22px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .modal-section-heading {
@@ -2089,8 +2262,14 @@ textarea.form-control {
 
 .modal-highlights-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
   gap: 8px 14px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 .modal-highlights-list li {
@@ -2101,6 +2280,9 @@ textarea.form-control {
   gap: 8px;
   line-height: 1.4;
   word-break: break-word;
+  overflow-wrap: break-word;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .modal-highlights-list li::before {
@@ -2119,11 +2301,18 @@ textarea.form-control {
   border-radius: 14px;
   padding: clamp(14px, 3vw, 22px);
   gap: 16px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  flex-wrap: wrap;
 }
 
 .pricing-col {
   display: flex;
   flex-direction: column;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .modal-price-values {
@@ -2131,18 +2320,19 @@ textarea.form-control {
   align-items: baseline;
   flex-wrap: wrap;
   gap: 10px;
+  min-width: 0;
 }
 
 .modal-discount-rate {
   font-family: var(--font-heading);
-  font-size: clamp(1.5rem, 4.5vw, 1.9rem);
+  font-size: clamp(1.4rem, 4vw, 1.9rem);
   font-weight: 800;
   color: #ffffff;
   line-height: 1.1;
 }
 
 .modal-base-rate {
-  font-size: clamp(0.9rem, 2.5vw, 1.05rem);
+  font-size: clamp(0.88rem, 2.5vw, 1.05rem);
   color: var(--text-muted);
   text-decoration: line-through;
 }
@@ -2153,10 +2343,27 @@ textarea.form-control {
   font-weight: 600;
   display: block;
   margin-top: 2px;
+  word-break: break-word;
 }
 
 .modal-action-col {
-  flex-shrink: 0;
+  min-width: 0;
+  max-width: 100%;
+  flex-shrink: 1;
+}
+
+#modal-whatsapp-cta {
+  white-space: normal;
+  word-break: break-word;
+  text-align: center;
+  justify-content: center;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+#modal-whatsapp-cta span {
+  white-space: normal;
+  word-break: break-word;
 }
 
 /* --------------------------------------------------------------------------
@@ -2407,8 +2614,8 @@ textarea.form-control {
   }
   .contact-card-container {
     grid-template-columns: 1fr;
-    gap: 36px;
-    padding: 36px 30px;
+    gap: 30px;
+    padding: clamp(20px, 3.5vw, 36px);
   }
   .footer-container {
     grid-template-columns: 1fr 1fr;
@@ -2433,33 +2640,48 @@ textarea.form-control {
     display: none; /* Swipe gestures & dots on mobile */
   }
   .filter-top-row,
-  .filter-bottom-row {
+  .filter-bottom-row,
+  .form-row {
     grid-template-columns: 1fr;
+    gap: 12px;
   }
 }
 
 @media (max-width: 680px) {
   .form-row {
     grid-template-columns: 1fr;
-    gap: 14px;
+    gap: 12px;
+  }
+  .hero-form-field {
+    min-width: 100%;
+    width: 100%;
   }
   .modal-pricing-box {
     flex-direction: column;
     align-items: stretch;
     text-align: center;
-    gap: 16px;
+    gap: 14px;
+    padding: 14px 12px;
+  }
+  .pricing-col {
+    width: 100%;
+    align-items: center;
+    text-align: center;
   }
   .modal-price-values {
     justify-content: center;
+    gap: 8px;
   }
   .modal-action-col,
-  .modal-action-col .btn {
+  .modal-action-col .btn,
+  #modal-whatsapp-cta {
     width: 100%;
+    max-width: 100%;
     justify-content: center;
   }
   .modal-highlights-list {
     grid-template-columns: 1fr;
-    gap: 10px;
+    gap: 8px;
   }
 }
 
@@ -2468,8 +2690,8 @@ textarea.form-control {
     padding: 50px 0;
   }
   .container {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 14px;
+    padding-right: 14px;
   }
   .packages-grid {
     grid-template-columns: 1fr;
@@ -2496,21 +2718,26 @@ textarea.form-control {
     width: 100%;
   }
   .contact-card-container {
-    padding: 20px 14px;
-    border-radius: 16px;
-    gap: 26px;
+    padding: 18px 12px;
+    border-radius: 14px;
+    gap: 22px;
   }
   .whatsapp-form-wrapper {
-    padding: 18px 14px;
+    padding: 16px 12px;
+    border-radius: 12px;
   }
   .modal-overlay {
-    padding: 10px 8px;
+    padding: 12px 8px;
+  }
+  .modal-card {
+    margin: 8px auto;
+    border-radius: 14px;
   }
   .modal-body {
-    padding: 18px 14px;
+    padding: 16px 12px;
   }
   .modal-pricing-box {
-    padding: 14px 12px;
+    padding: 12px 10px;
   }
   .floating-whatsapp-container {
     bottom: 18px;
@@ -2526,35 +2753,118 @@ textarea.form-control {
   }
 }
 
-/* Ultra-small mobile screens (<= 360px) */
-@media (max-width: 360px) {
+/* Standard Mobile Screens (<= 480px) */
+@media (max-width: 480px) {
   .container {
     padding-left: 12px;
     padding-right: 12px;
   }
   .contact-card-container {
-    padding: 16px 10px;
+    padding: 14px 10px;
+    border-radius: 12px;
+    gap: 18px;
   }
   .whatsapp-form-wrapper {
     padding: 14px 10px;
+    border-radius: 10px;
   }
   .form-control {
-    padding: 10px 12px;
+    padding: 10px 10px;
+    font-size: 15px;
+    min-height: 44px;
   }
   #send-whatsapp-btn {
-    padding: 12px 14px;
-    font-size: 0.88rem;
+    padding: 12px 12px;
+    font-size: 0.9rem;
+    min-height: 46px;
   }
   .modal-overlay {
-    padding: 6px 4px;
+    padding: 10px 6px;
+  }
+  .modal-card {
+    margin: 6px auto;
+    border-radius: 12px;
   }
   .modal-body {
     padding: 14px 10px;
   }
+  .modal-pricing-box {
+    padding: 12px 10px;
+  }
+  #modal-whatsapp-cta {
+    padding: 11px 12px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Ultra-small mobile screens (<= 360px) */
+@media (max-width: 360px) {
+  .container {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .contact-card-container {
+    padding: 12px 8px;
+    border-radius: 10px;
+    gap: 14px;
+  }
+  .whatsapp-form-wrapper {
+    padding: 12px 8px;
+    border-radius: 8px;
+  }
+  .form-control {
+    padding: 8px 8px;
+    font-size: 14px;
+    min-height: 42px;
+  }
+  #send-whatsapp-btn {
+    padding: 10px 10px;
+    font-size: 0.85rem;
+  }
+  .modal-overlay {
+    padding: 6px 4px;
+  }
+  .modal-card {
+    margin: 4px auto;
+    border-radius: 10px;
+  }
+  .modal-body {
+    padding: 12px 8px;
+  }
+  .modal-pricing-box {
+    padding: 10px 8px;
+  }
   .modal-title {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
   }
   .modal-discount-rate {
-    font-size: 1.45rem;
+    font-size: 1.35rem;
+  }
+  .modal-base-rate {
+    font-size: 0.82rem;
+  }
+  #modal-whatsapp-cta {
+    padding: 10px 8px;
+    font-size: 0.85rem;
+  }
+}
+
+/* Ultra-compact devices (<= 320px) */
+@media (max-width: 320px) {
+  .container {
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+  .contact-card-container {
+    padding: 10px 6px;
+  }
+  .whatsapp-form-wrapper {
+    padding: 10px 6px;
+  }
+  .modal-overlay {
+    padding: 4px 2px;
+  }
+  .modal-body {
+    padding: 10px 6px;
   }
 }
