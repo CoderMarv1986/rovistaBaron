@@ -2326,6 +2326,156 @@ textarea.form-control {
   flex-shrink: 0;
 }
 
+/* Modal Day-by-Day Itinerary */
+.modal-itinerary-container {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-glass);
+  border-radius: 12px;
+  padding: clamp(12px, 3vw, 20px);
+  margin-bottom: 22px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.modal-itinerary-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.modal-itinerary-card {
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 12px 14px;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  width: 100%;
+  box-sizing: border-box;
+  min-width: 0;
+  transition: border-color var(--transition-fast), background var(--transition-fast);
+}
+
+.modal-itinerary-card:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(245, 158, 11, 0.3);
+}
+
+.itinerary-day-badge {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.22) 0%, rgba(245, 158, 11, 0.08) 100%);
+  border: 1px solid var(--border-gold);
+  color: var(--gold-light);
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.03em;
+  border-radius: 6px;
+  padding: 4px 9px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.itinerary-content {
+  min-width: 0;
+  flex: 1;
+}
+
+.itinerary-day-title {
+  font-size: clamp(0.88rem, 2vw, 0.95rem);
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 5px;
+  line-height: 1.35;
+  word-break: break-word;
+}
+
+.itinerary-day-desc {
+  font-size: clamp(0.78rem, 1.8vw, 0.83rem);
+  color: var(--text-secondary);
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+/* Modal Inclusions & Exclusions */
+.modal-inc-exc-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 22px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 680px) {
+  .modal-inc-exc-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.modal-inc-box,
+.modal-exc-box {
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid var(--border-glass);
+  border-radius: 12px;
+  padding: clamp(12px, 3vw, 16px);
+  width: 100%;
+  box-sizing: border-box;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.inc-heading {
+  color: var(--whatsapp-green) !important;
+}
+
+.exc-heading {
+  color: #f87171 !important;
+}
+
+.modal-inclusions-list,
+.modal-exclusions-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.modal-inclusions-list li,
+.modal-exclusions-list li {
+  font-size: clamp(0.78rem, 1.8vw, 0.83rem);
+  color: var(--text-secondary);
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  line-height: 1.4;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.modal-inclusions-list li::before {
+  content: '✓';
+  color: var(--whatsapp-green);
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.modal-exclusions-list li::before {
+  content: '✕';
+  color: #f87171;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
 .modal-pricing-box {
   display: flex;
   align-items: center;

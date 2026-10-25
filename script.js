@@ -369,7 +369,8 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!response.ok) {
         throw new Error(`Failed to load packages.json: HTTP ${response.status}`);
       }
-      packagesData = await response.json();
+      const rawData = await response.json();
+      packagesData = Array.isArray(rawData) ? rawData : (rawData ? [rawData] : []);
       populateCountryDropdown();
       applyFilters();
     } catch (err) {
@@ -561,8 +562,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const matchesDesc = pkg.description.toLowerCase().includes(query);
         const matchesCategory = pkg.category ? pkg.category.toLowerCase().includes(query) : false;
         const matchesHighlights = pkg.highlights ? pkg.highlights.some(h => h.toLowerCase().includes(query)) : false;
+        const matchesInclusions = pkg.inclusions ? pkg.inclusions.some(inc => inc.toLowerCase().includes(query)) : false;
+        const matchesItinerary = pkg.itinerary ? pkg.itinerary.some(it => (it.title && it.title.toLowerCase().includes(query)) || (it.description && it.description.toLowerCase().includes(query))) : false;
 
-        if (!matchesTitle && !matchesCountry && !matchesDesc && !matchesCategory && !matchesHighlights) {
+        if (!matchesTitle && !matchesCountry && !matchesDesc && !matchesCategory && !matchesHighlights && !matchesInclusions && !matchesItinerary) {
           return false;
         }
       }
@@ -786,13 +789,86 @@ document.addEventListener('DOMContentLoaded', () => {
     if (modalTitle) modalTitle.textContent = pkg.title;
     if (modalDesc) modalDesc.textContent = pkg.description;
 
+    // Highlights
+    const modalHighlightsContainer = document.getElementById('modal-highlights-container');
     if (modalHighlightsList) {
       modalHighlightsList.innerHTML = '';
-      (pkg.highlights || []).forEach(item => {
-        const li = document.createElement('li');
-        li.textContent = item;
-        modalHighlightsList.appendChild(li);
-      });
+      if (pkg.highlights && pkg.highlights.length > 0) {
+        if (modalHighlightsContainer) modalHighlightsContainer.style.display = 'block';
+        pkg.highlights.forEach(item => {
+          const li = document.createElement('li');
+          li.textContent = item;
+          modalHighlightsList.appendChild(li);
+        });
+      } else if (modalHighlightsContainer) {
+        modalHighlightsContainer.style.display = 'none';
+      }
+    }
+
+    // Day-by-Day Itinerary
+    const modalItineraryContainer = document.getElementById('modal-itinerary-container');
+    const modalItineraryList = document.getElementById('modal-itinerary-list');
+    if (modalItineraryList) {
+      modalItineraryList.innerHTML = '';
+      if (pkg.itinerary && pkg.itinerary.length > 0) {
+        if (modalItineraryContainer) modalItineraryContainer.style.display = 'block';
+        pkg.itinerary.forEach(step => {
+          const card = document.createElement('div');
+          card.className = 'modal-itinerary-card';
+          card.innerHTML = `
+            <span class="itinerary-day-badge">Day ${step.day}</span>
+            <div class="itinerary-content">
+              <h5 class="itinerary-day-title">${step.title}</h5>
+              <p class="itinerary-day-desc">${step.description}</p>
+            </div>
+          `;
+          modalItineraryList.appendChild(card);
+        });
+      } else if (modalItineraryContainer) {
+        modalItineraryContainer.style.display = 'none';
+      }
+    }
+
+    // Inclusions & Exclusions
+    const modalIncExcContainer = document.getElementById('modal-inc-exc-container');
+    const modalInclusionsBox = document.getElementById('modal-inclusions-box');
+    const modalInclusionsList = document.getElementById('modal-inclusions-list');
+    const modalExclusionsBox = document.getElementById('modal-exclusions-box');
+    const modalExclusionsList = document.getElementById('modal-exclusions-list');
+
+    const hasInclusions = Boolean(pkg.inclusions && pkg.inclusions.length > 0);
+    const hasExclusions = Boolean(pkg.exclusions && pkg.exclusions.length > 0);
+
+    if (modalIncExcContainer) {
+      modalIncExcContainer.style.display = (hasInclusions || hasExclusions) ? 'grid' : 'none';
+    }
+
+    if (modalInclusionsList) {
+      modalInclusionsList.innerHTML = '';
+      if (hasInclusions) {
+        if (modalInclusionsBox) modalInclusionsBox.style.display = 'block';
+        pkg.inclusions.forEach(item => {
+          const li = document.createElement('li');
+          li.textContent = item;
+          modalInclusionsList.appendChild(li);
+        });
+      } else if (modalInclusionsBox) {
+        modalInclusionsBox.style.display = 'none';
+      }
+    }
+
+    if (modalExclusionsList) {
+      modalExclusionsList.innerHTML = '';
+      if (hasExclusions) {
+        if (modalExclusionsBox) modalExclusionsBox.style.display = 'block';
+        pkg.exclusions.forEach(item => {
+          const li = document.createElement('li');
+          li.textContent = item;
+          modalExclusionsList.appendChild(li);
+        });
+      } else if (modalExclusionsBox) {
+        modalExclusionsBox.style.display = 'none';
+      }
     }
 
     const savings = pkg.baseRate - pkg.discountRate;

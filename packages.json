@@ -1,216 +1,862 @@
 [
   {
     "id": "pkg-1",
-    "title": "Swiss Alpine Grand Luxury Tour",
-    "country": "Switzerland",
-    "image": "https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=1000&q=80",
-    "baseRate": 4800,
-    "discountRate": 3600,
-    "discountPercent": 25,
-    "duration": "10 Days / 9 Nights",
-    "description": "Experience first-class Glacier Express scenic train journeys, 5-star mountain chalet stays in Zermatt, and panoramic views of the iconic Matterhorn.",
-    "rating": 4.9,
-    "reviewsCount": 142,
-    "category": "Luxury & Scenic",
-    "highlights": [
-      "First-Class Glacier Express Pass",
-      "5-Star Alpine Resort in Zermatt",
-      "Private Matterhorn Helicopter Tour",
-      "Gourmet Swiss Fondue & Wine Tasting",      
-	  "Private Geisha Ceremony in Gion",
-      "Bullet Train Shinkansen Green Car",
-      "Michelin-Starred Kaiseki Dining",
-      "Private Mount Fuji Day Tour"
-    ],
-    "featured": true
-  },
-  {
-    "id": "pkg-2",
-    "title": "Kyoto Imperial & Tokyo Neon Odyssey",
-    "country": "Japan",
-    "image": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1000&q=80",
-    "baseRate": 4200,
-    "discountRate": 3150,
-    "discountPercent": 25,
-    "duration": "10 Days / 9 Nights",
-    "description": "Immerse yourself in authentic ryokan onsens, ancient bamboo groves, traditional private tea ceremonies, and ultra-modern culinary discoveries in Ginza.",
-    "rating": 4.95,
-    "reviewsCount": 218,
-    "category": "Culture & Heritage",
-    "highlights": [
-      "Private Geisha Ceremony in Gion",
-      "Bullet Train Shinkansen Green Car",
-      "Michelin-Starred Kaiseki Dining",
-      "Private Mount Fuji Day Tour"
-    ],
-    "featured": true
-  },
-  {
-    "id": "pkg-3",
-    "title": "Amalfi Coast & Capri Yacht Escapade",
-    "country": "Italy",
-    "image": "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1000&q=80",
-    "baseRate": 5500,
-    "discountRate": 4125,
-    "discountPercent": 25,
-    "duration": "7 Days / 6 Nights",
-    "description": "Sail past cliffs in Positano aboard a chartered private yacht, explore cliffside lemon groves, and stay in cliff-top cliff villas overlooking the Tyrrhenian Sea.",
-    "rating": 4.88,
-    "reviewsCount": 97,
-    "category": "Coastal Romance",
-    "highlights": [
-      "Private Riva Yacht Cruise to Capri",
-      "Cliffside Luxury Suite in Positano",
-      "Exclusive Vineyard Tasting in Ravello",
-      "Private Lemon Grove Cooking Class"
-    ],
-    "featured": true
-  },
-  {
-    "id": "pkg-4",
-    "title": "Dubai Royal Desert & Skyline Retreat",
-    "country": "United Arab Emirates",
-    "image": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1000&q=80",
-    "baseRate": 3400,
-    "discountRate": 2380,
-    "discountPercent": 30,
-    "duration": "6 Days / 5 Nights",
-    "description": "Live like royalty with private desert glamping, VIP Burj Khalifa penthouse lounge access, private yacht around Dubai Marina, and luxury desert safaris.",
-    "rating": 4.85,
-    "reviewsCount": 165,
-    "category": "Modern Luxury",
-    "highlights": [
-      "Private VIP Desert Safari & Falconry",
-      "Burj Al Arab Afternoon Tea",
-      "Sunset Yacht Charter at Marina",
-      "Chauffeured Rolls Royce Airport Transfers"
-    ],
-    "featured": false
-  },
-  {
-    "id": "pkg-5",
-    "title": "Maldives Overwater Sanctuary Paradise",
-    "country": "Maldives",
-    "image": "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=1000&q=80",
-    "baseRate": 6800,
-    "discountRate": 4760,
-    "discountPercent": 30,
-    "duration": "6 Days / 5 Nights",
-    "description": "Unwind in an exclusive overwater villa with private glass-bottom floors, private infinity pool, coral reef dolphin cruises, and underwater restaurant dining.",
-    "rating": 4.98,
-    "reviewsCount": 310,
-    "category": "Tropical Honeymoon",
-    "highlights": [
-      "All-Inclusive Ultra-Luxury Villa",
-      "Scenic Seaplane Return Transfers",
-      "Undersea Dining Experience",
-      "Private Manta Ray Snorkeling Safari"
-    ],
-    "featured": true
-  },
-  {
-    "id": "pkg-6",
-    "title": "Icelandic Aurora & Glacier Expedition",
-    "country": "Iceland",
-    "image": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1000&q=80",
-    "baseRate": 3900,
-    "discountRate": 3120,
+    "title": "Singapore City & Sentosa Explorer",
+    "country": "Singapore",
+    "image": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1000&q=80",
+    "baseRate": 1500,
+    "discountRate": 1200,
     "discountPercent": 20,
-    "duration": "7 Days / 6 Nights",
-    "description": "Witness the mesmerizing Northern Lights, explore blue ice crystal caves beneath Vatnajökull, and soak in geothermal mineral spas under polar skies.",
-    "rating": 4.92,
-    "reviewsCount": 88,
-    "category": "Adventure & Nature",
+    "duration": "6 Days / 5 Nights",
+    "description": "Explore the vibrant Lion City with a comprehensive Singapore city tour, a thrilling full day at Universal Studios, panoramic views from the Marina Bay Sands SkyPark, Gardens by the Bay, and action-packed adventures on Sentosa Island.",
+    "rating": 4.8,
+    "reviewsCount": 128,
+    "category": "City & Leisure",
     "highlights": [
-      "Guided Northern Lights Superjeep Tour",
-      "Private Blue Lagoon Retreat Spa",
-      "Vatnajökull Ice Cave Walk",
-      "Golden Circle Geysir & Waterfalls"
+      "Singapore City Tour & Merlion Park",
+      "Full Day Universal Studios Singapore",
+      "Marina Bay Sands SkyPark Observation Deck",
+      "Gardens by the Bay (Flower Dome & Cloud Forest)",
+      "Sentosa Island Admission with Cable Car",
+      "Wings of Time Night Show & S.E.A. Aquarium",
+      "Madame Tussauds Singapore 5-in-1 Experience",
+      "Luge & Skyride Adventure"
     ],
-    "featured": false
-  },
-  {
-    "id": "pkg-7",
-    "title": "Parisian Elegance & Loire Valley Castles",
-    "country": "France",
-    "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1000&q=80",
-    "baseRate": 4600,
-    "discountRate": 3910,
-    "discountPercent": 15,
-    "duration": "8 Days / 7 Nights",
-    "description": "Stroll down the Champs-Élysées, take an after-hours private tour of the Louvre, and wander through fairytale Renaissance châteaux in the historic Loire Valley.",
-    "rating": 4.87,
-    "reviewsCount": 112,
-    "category": "Culture & Heritage",
-    "highlights": [
-      "Private VIP Louvre After-Hours Tour",
-      "Helicopter Flight Over Loire Châteaux",
-      "Sommelier Champagne & Cellar Tour",
-      "Eiffel Tower Michelin Star Dinner"
+    "inclusions": [
+      "05 Nights hotel accommodation",
+      "Daily Breakfast at Hotel (Complimentary)",
+      "Arrival & Departure transfers",
+      "Half day City tour of Singapore with Guide (Seat in Coach)",
+      "Gardens by the Bay (Flower Dome & Cloud Forest)",
+      "Marina Bay Sands MBS SkyPark Observation Deck",
+      "Universal Studios Singapore",
+      "Half day Sentosa Island admission + 1-way Cable Car + Wings of Time + S.E.A. Aquarium + Luge & Skyride (2 rounds)",
+      "Madame Tussauds 5-in-1 (Images of Singapore, The Spirit of Singapore Boat Ride, Marvel 4D Cinema, Ultimate Film Star Experience)",
+      "24-hour assistance in English via Hotline",
+      "All transfers and tours on Private basis except city tour"
     ],
-    "featured": false
-  },
-  {
-    "id": "pkg-8",
-    "title": "Serengeti Great Migration Luxury Safari",
-    "country": "Kenya",
-    "image": "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1000&q=80",
-    "baseRate": 6200,
-    "discountRate": 4960,
-    "discountPercent": 20,
-    "duration": "9 Days / 8 Nights",
-    "description": "Fly into untamed savannahs for front-row views of the Great Wildebeest Migration, staying in opulent tented camps with personal rangers and hot air balloon rides.",
-    "rating": 4.96,
-    "reviewsCount": 74,
-    "category": "Wildlife Safari",
-    "highlights": [
-      "Sunrise Hot Air Balloon with Champagne",
-      "Daily 4x4 Private Game Drives",
-      "Five-Star Tented Wilderness Lodge",
-      "Maasai Cultural Elder Encounter"
+    "exclusions": [
+      "Vehicle provided is from point to point; vehicle not at disposal",
+      "Any airfare and Singapore visa",
+      "Overseas travel insurance",
+      "City Tax or Tourism tax at Hotel in Singapore if any",
+      "POE charges, porterage, and passport charges",
+      "Cost of Basic Travel Quota equivalent to USD 10,000",
+      "Govt Taxes & Service taxes as applicable",
+      "Any increase in the rate of exchange leading to increase in surface transportation and land arrangements prior to departure",
+      "Any expenses of personal nature (laundry, wines, tips, mineral water, food and drinks not in regular menus)",
+      "Cost of excursions, city sightseeing, entrance fees, and local guides availed of by the passenger other than those included in the itinerary"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Welcome to Singapore: Singapore City Tour",
+        "description": "Arrive in Singapore where you are greeted by our local representative outside the airport baggage hall. Embark on a half-day city tour featuring the iconic Merlion Statue at Merlion Park, panoramic skyline views from the Singapore Flyer, and cultural landmarks including Chinatown, Mount Faber, and the Jewellery Factory. Overnight in Singapore."
+      },
+      {
+        "day": 2,
+        "title": "Universal Studios Singapore",
+        "description": "Enjoy breakfast at the hotel before heading out for a full day at Universal Studios Singapore at Resorts World Sentosa. Experience thrilling rides and attractions, meet characters like Gru, the Minions, Madagascar, Po, and Master Tigress, and visit the Far Far Away Castle to enjoy the Shrek 4-D attraction. Overnight in Singapore."
+      },
+      {
+        "day": 3,
+        "title": "MBS SkyPark & Gardens by the Bay",
+        "description": "After breakfast at the hotel, visit the MBS SkyPark Observation Deck located 56 storeys high for panoramic views of Marina Bay and the cityscape. In the evening, explore Gardens by the Bay, including the Cloud Forest with its indoor waterfall and aerial walkways, and the Flower Dome featuring plants from diverse global habitats. Overnight in Singapore."
+      },
+      {
+        "day": 4,
+        "title": "Sentosa Island Adventure & Madame Tussauds",
+        "description": "Enjoy breakfast at the hotel and spend a full day exploring Sentosa Island. Highlights include a 1-way cable car ride, S.E.A. Aquarium, Wings of Time night show, Luge & Skyride (2 rounds), and the Madame Tussauds 5-in-1 experience featuring Images of Singapore, the Spirit of Singapore Boat Ride, Marvel 4D Cinema, Ultimate Film Star Experience, and the K-wave zone. Overnight in Singapore."
+      },
+      {
+        "day": 5,
+        "title": "Day Free for Shopping & Leisure",
+        "description": "Enjoy breakfast at the hotel. The day is free at your leisure for shopping and exploring Singapore on your own. Overnight in Singapore."
+      },
+      {
+        "day": 6,
+        "title": "Departure from Singapore",
+        "description": "After breakfast, check out from the hotel and transfer to the airport for your return flight home, concluding your memorable holiday with Widu Holidays."
+      }
     ],
     "featured": true
   },
   {
-    "id": "pkg-9",
-    "title": "Santorini Caldera Sunset & Aegean Cruise",
-    "country": "Greece",
-    "image": "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=1000&q=80",
-    "baseRate": 3600,
-    "discountRate": 2700,
-    "discountPercent": 25,
-    "duration": "7 Days / 6 Nights",
-    "description": "Wake up to white-washed cliffside architecture in Oia, dive into volcanic hot springs, and savor Greek gourmet gastronomy under mesmerizing Aegean sunsets.",
-    "rating": 4.89,
-    "reviewsCount": 139,
-    "category": "Coastal Romance",
-    "highlights": [
-      "Caldera Infinity Suite in Oia",
-      "Catamaran Sunset Cruise with BBQ",
-      "Private Santorini Wine Road Trip",
-      "Helicopter Transfer from Athens"
-    ],
-    "featured": false
+	  "id": "pkg-2",
+	  "title": "Bhutan Himalayan Scenic & Cultural Tour",
+	  "country": "Bhutan",
+	  "image": "https://images.unsplash.com/photo-1558431382-27e303142255?auto=format&fit=crop&w=1000&q=80",
+	  "baseRate": 2400,
+	  "discountRate": 1920,
+	  "discountPercent": 20,
+	  "duration": "9 Days / 8 Nights",
+	  "description": "Discover the mystical Kingdom of Bhutan on an immersive 8-night journey through Phuntsholing, Thimphu, Punakha, and Paro. Experience breathtaking Himalayan mountain passes, ancient majestic dzongs, vibrant local traditions, and the iconic hike to Tiger's Nest monastery.",
+	  "rating": 4.9,
+	  "reviewsCount": 96,
+	  "category": "Culture & Adventure",
+	  "highlights": [
+		"Scenic Drive to Thimphu via Kharbandi Gonpa",
+		"King's Memorial Chorten & 169ft Buddha Point",
+		"Dochula Pass & Panoramic Himalayan Views",
+		"Punakha Dzong & Chimi Lhakhang (Temple of Fertility)",
+		"Ta Dzong Museum & Rinpung Dzong in Paro",
+		"Hike to the Iconic Tiger's Nest (Taktsang Monastery)",
+		"Excursion to Chelela Pass (Highest Motorable Pass)",
+		"Explore Paro & Thimphu Local Bazaars"
+	  ],
+	  "inclusions": [
+		"Accommodation in 4 Star hotels in Double Occupancy",
+		"Tour Guide for entire tour",
+		"Breakfast & Dinner Only",
+		"Transportation in Hyundai H1/Hiace Bus",
+		"Pickup and Drop to Bagdogra Airport in 1 Innova",
+		"Processing and approval permit",
+		"Sightseeing",
+		"Rooms based on Twin sharing/Double basis",
+		"SDF INR 1200 per person per night"
+	  ],
+	  "exclusions": [
+		"Travel Insurance",
+		"Personal Expenses (Laundry services, Telephone calls, Alcoholic and Non-alcoholic drinks)",
+		"Single supplementary room",
+		"Flight Fare",
+		"Museum fees",
+		"Lunch"
+	  ],
+	  "itinerary": [
+		{
+		  "day": 1,
+		  "title": "Arrival IXB Airport – Phuntsholing",
+		  "description": "Meet and greet upon arrival at IXB Airport and transfer to the Jaigaon Indian border near Phuentsholing[cite: 2]. Our representative will meet you at the Phuentsholing gate. Overnight stay at the hotel in Phuentsholing[cite: 2]."
+		},
+		{
+		  "day": 2,
+		  "title": "Phuntsholing – Thimphu",
+		  "description": "After breakfast, transfer to Thimphu[cite: 2]. En route, visit Kharbandi Gonpa built in 1967 and enjoy magnificent views of the Indian plains and Toorsa River[cite: 2]. Pass through Chapcha and Chuzom before arriving in Thimphu[cite: 2]. Check in at the hotel for an overnight stay[cite: 2]."
+		},
+		{
+		  "day": 3,
+		  "title": "Thimphu Sightseeing",
+		  "description": "After breakfast, embark on a city tour visiting the King's Memorial Chorten, the 169-foot Buddha Point statue, National Library, Coronation Park, Takin Preservation Centre, and Chang Yul Park[cite: 2]. Enjoy an evening walk through Thimphu town. Overnight at a hotel in Thimphu[cite: 2]."
+		},
+		{
+		  "day": 4,
+		  "title": "Thimphu – Punakha",
+		  "description": "Drive to Punakha across Dochula pass (3,080m)[cite: 2], which offers spectacular views of the eastern Himalayas on a clear day[cite: 2]. Visit the majestic Punakha Dzong[cite: 2] and take an excursion to Chimi Lhakhang, the temple of fertility[cite: 2]. Overnight at the hotel in Punakha[cite: 2]."
+		},
+		{
+		  "day": 5,
+		  "title": "Punakha – Paro",
+		  "description": "Drive back to Paro via Wang Chhu and Paro Chhu river valleys[cite: 2]. En route, visit Simtokha Dzong[cite: 2]. Upon arrival in Paro, visit Ta Dzong (National Museum) and the historic Rinpung Dzong[cite: 2]. Overnight at the hotel in Paro[cite: 2]."
+		},
+		{
+		  "day": 6,
+		  "title": "Hike to Tiger’s Nest (Taktsang Monastery)",
+		  "description": "Embark on a hike to Taktsang Monastery (Tiger's Nest), taking about 2.5 hours to reach the cafeteria viewpoint, with an optional 45-minute uphill walk for a closer view[cite: 2]. Enjoy lunch in town and explore Paro Bazar[cite: 2]. Overnight stay in Paro[cite: 2]."
+		},
+		{
+		  "day": 7,
+		  "title": "Chelela Pass Excursion",
+		  "description": "Drive to Chelela Pass (3,988m), one of the highest motorable passes in Bhutan, adorned with sacred prayer flags and surrounded by Himalayan flora[cite: 2]. Evening drive back to Paro for an overnight stay[cite: 2]."
+		},
+		{
+		  "day": 8,
+		  "title": "Paro – Phuntsholing",
+		  "description": "Drive back to Phuentsholing[cite: 2]. Our escort will assist you with exit formalities[cite: 2]. Overnight stay at a hotel in Phuentsholing[cite: 2]."
+		},
+		{
+		  "day": 9,
+		  "title": "Phuntsholing – IXB Airport",
+		  "description": "After breakfast, transfer to IXB Airport where our escort will bid you farewell[cite: 2]."
+		}
+	  ],
+	  "featured": true
   },
   {
-    "id": "pkg-10",
-    "title": "Bali Spiritual Wellness & Rainforest Haven",
-    "country": "Indonesia",
-    "image": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1000&q=80",
-    "baseRate": 2800,
-    "discountRate": 1960,
-    "discountPercent": 30,
-    "duration": "8 Days / 7 Nights",
-    "description": "Reconnect your senses in an Ubud jungle pool villa, partake in traditional water purification blessings, and explore emerald green rice terraces and coastal temples.",
-    "rating": 4.91,
-    "reviewsCount": 184,
-    "category": "Wellness & Eco",
-    "highlights": [
-      "Private River-View Jungle Pool Villa",
-      "Daily Holistic Ayurvedic Treatments",
-      "Tirta Empul Water Purification Ritual",
-      "Mount Batur Sunrise Trekking & Breakfast"
-    ],
-    "featured": false
-  }
+	  "id": "pkg-3",
+	  "title": "Bhutan Highlights & Scenic Getaway",
+	  "country": "Bhutan",
+	  "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1000&q=80",
+	  "baseRate": 1800,
+	  "discountRate": 1440,
+	  "discountPercent": 20,
+	  "duration": "6 Days / 5 Nights",
+	  "description": "Experience the magic of Bhutan on a 5-night journey covering Phuentsholing, Thimphu, and Paro. Discover iconic cultural landmarks, majestic monasteries, scenic mountain views, and the choice of an adventurous hike to Tiger's Nest or a visit to Chelela Pass.",
+	  "rating": 4.8,
+	  "reviewsCount": 84,
+	  "category": "Culture & Nature",
+	  "highlights": [
+		"Kharbandi Gonpa Monastery visit en route to Thimphu",
+		"King's Memorial Chorten & 169ft Buddha Point",
+		"Takin Preservation Centre & Coronation Park",
+		"Scenic Drive from Thimphu to Paro",
+		"Choice of Hike to Tiger's Nest (Taktsang) or Chelela Pass",
+		"Explore Phuentsholing and Jaigaon border"
+	  ],
+	  "inclusions": [
+		"Accommodation in 3 Star hotels in Double Occupancy/Twin sharing & Extra bed/Mattress",
+		"Tour Guide for entire tour",
+		"Breakfast & Dinner Only",
+		"Transportation in Toyota Coaster Bus",
+		"Pickup and drop to NJP/ IBX in 1 Tempo Traveller (17 seater)",
+		"Processing and approval permit",
+		"Sightseeing",
+		"Rooms based on Twin sharing basis/Double",
+		"SDF INR 1200 per person per day"
+	  ],
+	  "exclusions": [
+		"Travel Insurance",
+		"Personal Expenses (Laundry services, Telephone call, Alcoholic and Non-alcoholic drinks)",
+		"Single supplementary room",
+		"Flight Fare",
+		"Monument fees & all Entry fees approximate Rs. 2500/-",
+		"Lunch"
+	  ],
+	  "itinerary": [
+		{
+		  "day": 1,
+		  "title": "Arrival NJP/ IXB – Phuntsholing",
+		  "description": "Meet and greet on arrival at NJP / IXB and transfer to the Jaigaon Indian border next to Phuentsholing[cite: 3]. A Bhutan representative will meet you on arrival at Jaigaon[cite: 3]. Evening free for leisure[cite: 3]. Overnight stay at the hotel[cite: 3]."
+		},
+		{
+		  "day": 2,
+		  "title": "Phuntsholing – Thimphu",
+		  "description": "After meeting your representative at the Phuentsholing gate, transfer to Thimphu with a stop at Kharbandi Gonpa (built in 1967)[cite: 3]. Enjoy magnificent views of the Indian plains and Toorsa River along the climb, passing the first hydro power electric project in Bhutan[cite: 3]. Lunch is served en route[cite: 3]. Continue past Chapcha and Chuzom to Thimphu[cite: 3]. Check in and overnight at the hotel in Thimphu[cite: 3]."
+		},
+		{
+		  "day": 3,
+		  "title": "Thimphu Sightseeing – Paro",
+		  "description": "After breakfast, enjoy Thimphu sightseeing including the King's Memorial Chorten, the 169-foot Buddha Point statue, the National Library housing rare scripts and the world's biggest book, Coronation Park with the walking Buddha statue, and the Takin Preservation Centre[cite: 3]. Lunch will be served, followed by a drive to Paro for an overnight stay[cite: 3]."
+		},
+		{
+		  "day": 4,
+		  "title": "Day 4 Options: Hike to Tiger's Nest OR Chelela Pass",
+		  "description": "Choose between two wonderful options: Option 1 is a hike to Taktsang (Tiger's Nest) taking about 2.5 hours to the cafeteria viewpoint (with an optional 45-minute uphill walk closer), followed by lunch and time at Paro Bazar[cite: 3]. Option 2 is a drive to Chelela Pass (3,988m), one of the highest motorable passes in the country adorned with sacred prayer flags and Himalayan flora[cite: 3]. Evening drive back to Paro for an overnight stay[cite: 3]."
+		},
+		{
+		  "day": 5,
+		  "title": "Paro – Phuntsholing",
+		  "description": "Drive back to Jaigaon[cite: 3]. The Bhutan Buddha escort will assist you with exit formalities[cite: 3]. Overnight stay in Phuentsholing."
+		},
+		{
+		  "day": 6,
+		  "title": "Jaigaon - NJP / IXB Airport Drop",
+		  "description": "Morning after breakfast, transfer from Jaigaon to NJP / IXB Airport for your departure[cite: 3]."
+		}
+	  ],
+	  "featured": true
+	},
+	{
+	  "id": "pkg-4",
+	  "title": "Dubai Dazzling City & Desert Explorer",
+	  "country": "United Arab Emirates",
+	  "image": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1000&q=80",
+	  "baseRate": 1200,
+	  "discountRate": 960,
+	  "discountPercent": 20,
+	  "duration": "5 Days / 4 Nights",
+	  "description": "Discover the vibrant and ultramodern metropolis of Dubai[cite: 4]. Enjoy a romantic Creek Dhow Cruise with dinner[cite: 4], a half-day city tour with access to Burj Khalifa's 124th floor observation deck[cite: 4], an thrilling desert safari with BBQ dinner[cite: 4], and a visit to the world's largest natural flower garden, Dubai Miracle Garden[cite: 4].",
+	  "rating": 4.8,
+	  "reviewsCount": 115,
+	  "category": "City & Desert Adventure",
+	  "highlights": [
+		"Meet & Assist at Dubai Airport with Private Arrival Transfer",
+		"Romantic Creek Dhow Cruise with Dinner",
+		"Half-Day Dubai City Tour with Dubai Mall Drop",
+		"Burj Khalifa Level 124 Observation Deck (Non-Prime)",
+		"Deluxe Desert Safari with Dune Bashing & BBQ Dinner",
+		"Live Tanura, Horse, and Fire Dance Performances",
+		"Dubai Miracle Garden Visit"
+	  ],
+	  "inclusions": [
+		"Meet & assist at Dubai airport + Arrival Transfer - Private",
+		"Creek Dhow cruise with dinner transfer - Sharing",
+		"Half Day Dubai City tour with Drop to Dubai Mall - Sharing",
+		"Burj Khalifa 124 floor, Non-Prime Hours ticket with one-way transfer - Private",
+		"Standard Desert Safari with BBQ dinner - Sharing",
+		"Miracle Garden visit with transfer - Private",
+		"Departure Transfer to DXB Airport - Private",
+		"5% UAE VAT included"
+	  ],
+	  "exclusions": [
+		"Tourism Dirham (AED 10 for 3* | AED 15 for 4* | AED 20 for 5*) per room per night",
+		"Vehicle mentioned on Private Basis is from point to point, not at disposal",
+		"Not applicable during peak season and blackout dates",
+		"Applicable government taxes are additional",
+		"Overseas medical insurance",
+		"Tipping for on-tour services (coach driver, local guides, etc.)",
+		"Tourist city tax – payable directly by the passenger only at each hotel",
+		"RT-PCR charges in India and UAE",
+		"POE charges and passport charges",
+		"Expenses of a personal nature (porterage, laundry, mini-bar, mineral water, telephone charges, food and drinks not part of the package)",
+		"Additional meals not mentioned in the itinerary",
+		"Cost of excursions, city sightseeing, entrance fees, and local guides availed of other than those mentioned in the itinerary"
+	  ],
+	  "itinerary": [
+		{
+		  "day": 1,
+		  "title": "Arrival in Dubai & Dhow Cruise with Dinner",
+		  "description": "On arrival at Dubai Airport, a local representative will welcome you and transfer you to your hotel[cite: 4]. In the evening, enjoy a romantic cruise on board an authentic Arabian wooden dhow along the creek, featuring a mouth-watering feast and views of moonlit Dubai landmarks[cite: 4]. Return to your hotel for an overnight stay[cite: 4]."
+		},
+		{
+		  "day": 2,
+		  "title": "Half-Day Dubai City Tour & Burj Khalifa (Level 124)",
+		  "description": "After breakfast at the hotel, proceed for a half-day city tour blending traditional gold souks with ground-breaking architecture[cite: 4]. Afterwards, visit 'At the Top' Burj Khalifa on Level 124 for captivating panoramic views of the city alongside a multimedia presentation on Dubai's history[cite: 4]. Return to your hotel for overnight[cite: 4]."
+		},
+		{
+		  "day": 3,
+		  "title": "Deluxe Desert Safari with BBQ Dinner",
+		  "description": "After breakfast at the hotel, leave your main luggage in the cloakroom and carry an overnight bag for your afternoon Desert Safari tour[cite: 4]. Experience an exciting 4x4 dune drive, followed by a camp featuring scintillating dance performances (Tanura, Horse, and Fire dance) and a delicious vegetarian/non-vegetarian barbecue dinner[cite: 4]. Overnight in Dubai[cite: 4]."
+		},
+		{
+		  "day": 4,
+		  "title": "Dubai Miracle Garden",
+		  "description": "Enjoy breakfast at the hotel, then proceed to the Dubai Miracle Garden, the world's largest natural flower garden featuring over 150 million flowers across 18 acres of vibrant, color-filled displays[cite: 4]. Return to your hotel for an overnight stay in Dubai[cite: 4]."
+		},
+		{
+		  "day": 5,
+		  "title": "Departure from Dubai",
+		  "description": "After breakfast, check out from the hotel and transfer to Dubai airport for your flight back home[cite: 4]."
+		}
+	  ],
+	  "featured": true
+	},
+	{
+	  "id": "pkg-5",
+	  "title": "Ultimate Dubai & Abu Dhabi Grand Experience",
+	  "country": "United Arab Emirates",
+	  "image": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1000&q=80",
+	  "baseRate": 1800,
+	  "discountRate": 1440,
+	  "discountPercent": 20,
+	  "duration": "5 Days / 4 Nights",
+	  "description": "Experience the ultimate luxury and adventure across Dubai and Abu Dhabi[cite: 5]. Discover mind-bending exhibits at the Museum of Illusions[cite: 5], sparkling lights at Dubai Garden Glow[cite: 5], panoramic city views from Dubai Frame[cite: 5] and Burj Khalifa Level 124[cite: 5], marine life at Dubai Aquarium with a Penguin Encounter[cite: 5], the futuristic Museum of the Future[cite: 5], a thrilling desert safari with BBQ dinner[cite: 5], the majestic Sheikh Zayed Grand Mosque[cite: 5], Louvre Abu Dhabi[cite: 5], and world-class thrills at Warner Bros. World Abu Dhabi[cite: 5].",
+	  "rating": 4.9,
+	  "reviewsCount": 156,
+	  "category": "Luxury & Theme Parks",
+	  "highlights": [
+		"Museum of Illusions Dubai Entry & Exhibits[cite: 5]",
+		"Dubai Garden Glow & Dinosaur Park[cite: 5]",
+		"Dubai Half-Day City Tour & Dubai Frame[cite: 5]",
+		"Burj Khalifa Level 124 Observation Deck[cite: 5]",
+		"Dubai Mall Aquarium, Underwater Zoo & Penguin Encounter[cite: 5]",
+		"Museum of the Future 5-Floor Immersive Journey[cite: 5]",
+		"Deluxe Desert Safari with BBQ Dinner & Live Performances[cite: 5]",
+		"Abu Dhabi City Tour & Sheikh Zayed Grand Mosque[cite: 5]",
+		"Louvre Abu Dhabi Universal Museum[cite: 5]",
+		"Warner Bros. World Abu Dhabi Theme Park[cite: 5]"
+	  ],
+	  "inclusions": [
+		"Museum of Illusion Entry ticket with Private Transfer (One way)[cite: 5]",
+		"Garden Glow Dubai with Private Transfer (Two way)[cite: 5]",
+		"Dubai Half day city tour (7 STR Guide-cum driver)[cite: 5]",
+		"Dubai Frame Entry Ticket[cite: 5]",
+		"Dubai Mall Aquarium and Under water zoo ticket[cite: 5]",
+		"PENGUIN ENCOUNTER[cite: 5]",
+		"Burj Khalifa 124 Floor (Non-Prime) 09:00 - 14:30 & 19:00 until closing with Private Transfer (One way)[cite: 5]",
+		"The Green Planet Entry Ticket with Private Transfer (One way)[cite: 5]",
+		"IMG Park General Entry Ticket with Private Transfer (Two way)[cite: 5]",
+		"Museum Of The Future Entry Ticket with Private Transfer (Two way)[cite: 5]",
+		"Deluxe Desert Safari with BBQ Dinner on PVT Basis[cite: 5]",
+		"Abu Dhabi City Tour + Grand Mosque Visit Private Basis (up to 06 pax - Guide-cum Driver)[cite: 5]",
+		"Abu Dhabi Louvre Museum entrance[cite: 5]",
+		"Warner Bros Abu Dhabi General entry ticket[cite: 5]",
+		"One way | Dubai Airports (T1 | T2 | T3) - DXB Zone 1 | 07 Seater Car[cite: 5]",
+		"One way | Abu Dhabi City | Airport - Dubai Airports (T1 | T2 | T3) | 07 Seater Car[cite: 5]"
+	  ],
+	  "exclusions": [
+		"Airfare and entry visa[cite: 5]",
+		"Overseas medical insurance[cite: 5]",
+		"Mandatory hotel tourist city tax / Tourism Dirham[cite: 5]",
+		"Tipping for on-tour services (coach driver, local guides, etc.)[cite: 5]",
+		"Personal expenses (laundry, mini-bar, telephone calls, etc.)[cite: 5]"
+	  ],
+	  "itinerary": [
+		{
+		  "day": 1,
+		  "title": "Arrival in Dubai, Museum of Illusions & Garden Glow",
+		  "description": "On arrival at Dubai Airport, a local representative will welcome you and transfer you to your hotel[cite: 5]. Visit the Museum of Illusions to experience over 60 visual and educational exhibits[cite: 5]. In the evening, explore Dubai Garden Glow featuring 3D artworks, recyclable art displays, and the world's biggest dinosaur park with 100 animatronic dinosaurs[cite: 5]. Overnight stay in Dubai[cite: 5]."
+		},
+		{
+		  "day": 2,
+		  "title": "Dubai City Tour, Dubai Frame, Aquarium, Penguin Encounter & Burj Khalifa",
+		  "description": "After breakfast, proceed for a half-day Dubai orientation city tour blending old and new[cite: 5]. Visit the Dubai Frame for panoramic bird's-eye views and museum insights[cite: 5]. Experience 'At the Top' Burj Khalifa on Level 124[cite: 5], and explore the Dubai Mall Aquarium and Underwater Zoo featuring thousands of marine species and a special Penguin Encounter[cite: 5]. Overnight in Dubai[cite: 5]."
+		},
+		{
+		  "day": 3,
+		  "title": "Museum of the Future & Deluxe Desert Safari",
+		  "description": "After breakfast, visit the magnificent Museum of the Future to explore its 5 immersive floors of sustainable living and forward-thinking innovations[cite: 5]. In the afternoon, embark on an exciting Desert Safari tour with 4x4 dune bashing, live belly, Tanura, horse, and fire dance performances, and a delicious BBQ dinner[cite: 5]. Overnight in Dubai[cite: 5]."
+		},
+		{
+		  "day": 4,
+		  "title": "Abu Dhabi City Tour, Grand Mosque, Louvre & Warner Bros. World",
+		  "description": "After breakfast and check-out, proceed to Abu Dhabi for a city tour[cite: 5]. Visit the iconic Sheikh Zayed Grand Mosque with its 82 domes and gold-plated chandeliers[cite: 5], followed by the universal Louvre Abu Dhabi designed by Jean Nouvel[cite: 5]. Spend the rest of the day exploring Warner Bros. World Abu Dhabi, the world's largest indoor theme park featuring six immersive lands and thrilling 4D/5D rides[cite: 5]. Overnight in Abu Dhabi[cite: 5]."
+		},
+		{
+		  "day": 5,
+		  "title": "Departure from UAE",
+		  "description": "After breakfast at the hotel, check out and enjoy your transfer to the airport for your flight back home[cite: 5]."
+		}
+	  ],
+	  "featured": true
+	},
+	{
+	  "id": "pkg-6",
+	  "title": "Japan Golden Route & Scenic Explorer",
+	  "country": "Japan",
+	  "image": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=1000&q=80",
+	  "baseRate": 3500,
+	  "discountRate": 2800,
+	  "discountPercent": 20,
+	  "duration": "8 Days / 7 Nights",
+	  "description": "Experience Japan's iconic golden route on an 8-day journey covering Tokyo, Hakone, Mt. Fuji, Hiroshima, Miyajima Island, Kyoto, Nara, and Osaka[cite: 7]. Enjoy bullet train travel, scenic mountain views, historic temples, and vibrant cultural landmarks[cite: 7].",
+	  "rating": 4.9,
+	  "reviewsCount": 172,
+	  "category": "Culture & Scenic",
+	  "highlights": [
+		"Mt. Fuji 5th Station, Lake Ashi Cruise & Owakudani Ropeway[cite: 7]",
+		"Tokyo Sightseeing: Asakusa Temple, Nakamise Street & Sky Tree[cite: 7]",
+		"Bullet Train Shinkansen Journey to Hiroshima[cite: 7]",
+		"Peace Memorial Park & Atomic Bomb Dome[cite: 7]",
+		"Miyajima Island & Itsukushima Shrine Floating Torii Gate[cite: 7]",
+		"Kyoto & Nara Day Tour (Kinkaku-ji, Arashiyama Bamboo Grove & Todaiji Temple)[cite: 7]",
+		"Osaka City Tour (Osaka Castle, Dotonbori & Umeda Observatory)[cite: 7]"
+	  ],
+	  "inclusions": [
+		"Accommodations in 4-Star hotels on Twin/Double sharing basis[cite: 7]",
+		"Meals as per itinerary[cite: 7]",
+		"Transfers and sightseeing as per itinerary with English Speaking Guide/Driver[cite: 7]",
+		"Luggage transfer (01 piece per person between Tokyo and Osaka)[cite: 7]",
+		"Entrances as per itinerary[cite: 7]",
+		"Domestic train ticket (Bullet Train ordinary class reserved seat from Tokyo to Hiroshima)[cite: 7]",
+		"Japan Visa & Overseas Travel Insurance[cite: 7]"
+	  ],
+	  "exclusions": [
+		"International airfare[cite: 7]",
+		"Personal expenses (laundry, telephone calls, drinks, etc.)[cite: 7]",
+		"Meals and services other than those specified in the itinerary[cite: 7]"
+	  ],
+	  "itinerary": [
+		{
+		  "day": 1,
+		  "title": "Arrive Tokyo",
+		  "description": "Upon arrival in Tokyo, transfer to the hotel. Overnight in Tokyo (Private Vehicle with English Speaking Driver)[cite: 7]."
+		},
+		{
+		  "day": 2,
+		  "title": "Hakone – Mt. Fuji Tour",
+		  "description": "After breakfast at the hotel, proceed to Hakone (95 Kms / 2 Hrs). Upon arrival, visit Mt. Fuji 5th Station, take a Lake Ashi Cruise, and ride the Owakudani Ropeway. Proceed back to Tokyo for an overnight stay (Private Vehicle with English Speaking Guide)[cite: 7]."
+		},
+		{
+		  "day": 3,
+		  "title": "Tokyo City Sightseeing",
+		  "description": "After breakfast at the hotel, enjoy full-day Tokyo sightseeing visiting Asakusa Temple, Nakamise Street, Sumida River Cruise, and Tokyo Sky Tree. Overnight in Tokyo (Private Vehicle with English Speaking Guide)[cite: 7]."
+		},
+		{
+		  "day": 4,
+		  "title": "Tokyo – Hiroshima by Bullet Train",
+		  "description": "After breakfast at the hotel, proceed to Hiroshima by Bullet Train (ordinary class reserved seat). Upon arrival, visit the Peace Memorial & Park and Atomic Bomb Dome, then transfer to the hotel for an overnight stay in Hiroshima (Private Vehicle with English Speaking Guide)[cite: 7]."
+		},
+		{
+		  "day": 5,
+		  "title": "Miyajima Island Tour – Osaka by Surface",
+		  "description": "After breakfast at the hotel, visit Miyajima Island, Itsukushima Shrine, and the Torii Gate. Proceed to Osaka by drive and check in at your hotel for an overnight stay (Private Vehicle with English Speaking Guide)[cite: 7]."
+		},
+		{
+		  "day": 6,
+		  "title": "Osaka – Kyoto – Nara – Osaka",
+		  "description": "After breakfast at the hotel, enjoy full-day Kyoto and Nara sightseeing visiting Kinkaku-ji Temple, Arashiyama Bamboo Grove, Gion Area, Todaiji Temple, and Nara Deer Park. Overnight in Osaka (Private Vehicle with English Speaking Guide)[cite: 7]."
+		},
+		{
+		  "day": 7,
+		  "title": "Osaka City Sightseeing",
+		  "description": "After breakfast at the hotel, enjoy a full-day city sightseeing tour visiting Osaka Castle, Umeda District Observatory Deck, Aqua Liner, Shinsaibashi, and Dotonbori. Overnight in Osaka (Private Vehicle with English Speaking Guide)[cite: 7]."
+		},
+		{
+		  "day": 8,
+		  "title": "Osaka – Departure",
+		  "description": "After breakfast, transfer to the airport for your departure flight (Private Vehicle with English Speaking Driver)[cite: 7]."
+		}
+	  ],
+	  "featured": true
+	},
+	{
+	  "id": "pkg-7",
+	  "title": "Kuala Lumpur & Genting Highlands Adventure",
+	  "country": "Malaysia",
+	  "image": "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=1000&q=80",
+	  "baseRate": 950,
+	  "discountRate": 760,
+	  "discountPercent": 20,
+	  "duration": "4 Days / 3 Nights",
+	  "description": "Discover the vibrant capital of Malaysia with a comprehensive city tour, iconic KL Tower, Batu Caves, a thrilling day trip to Genting Highlands with SkyWorlds theme park, Aquaria KLCC, KL Bird Park, Petronas Twin Towers, Zoo Negara, and Putrajaya.",
+	  "rating": 4.8,
+	  "reviewsCount": 112,
+	  "category": "City & Family Adventure",
+	  "highlights": [
+		"Kuala Lumpur City Tour & KL Tower Observation Deck[cite: 8]",
+		"Batu Caves Limestones & Hindu Shrines[cite: 8]",
+		"Genting Highlands Day Trip with 2-Way Cable Car Ride[cite: 8]",
+		"Genting SkyWorlds Outdoor Theme Park[cite: 8]",
+		"Aquaria KLCC Oceanarium & Underwater Tunnel[cite: 8]",
+		"KL Bird Park Free-Flight Aviary[cite: 8]",
+		"Petronas Twin Towers Evening Visit[cite: 8]",
+		"Zoo Negara & Giant Panda Conservation Center[cite: 8]",
+		"Putrajaya Monumental Architecture Photo Stop[cite: 8]"
+	  ],
+	  "inclusions": [
+		"03 Nights hotel accommodation in Kuala Lumpur[cite: 8]",
+		"Daily Breakfast at Hotel (Except Day 1)[cite: 8]",
+		"Arrival & Departure transfers[cite: 8]",
+		"KL City tour with chocolate outlet + KL Tower entry ticket + Batu Caves[cite: 8]",
+		"Genting tour with 2-way cable car rides (SIC)[cite: 8]",
+		"KL Aquarium entry ticket[cite: 8]",
+		"KL Bird park entry ticket[cite: 8]",
+		"Twin tower entry ticket (Evening)[cite: 8]",
+		"Zoo negara entry ticket[cite: 8]",
+		"En route puthra jaya photo stop tour[cite: 8]",
+		"All taxes including Tourism Tax[cite: 8]",
+		"24-hour assistance in English via Hotline[cite: 8]",
+		"All transfers and tours on PVT basis unless stated otherwise[cite: 8]"
+	  ],
+	  "exclusions": [
+		"Vehicle mentioned for tour and transfer is Point to Point Service, vehicle not at disposal[cite: 8]",
+		"Applicable Government Taxes are additional[cite: 8]",
+		"Overseas Medical Insurance[cite: 8]",
+		"Malaysia Visa[cite: 8]",
+		"Tipping for on-tour services (coach driver, local guides, etc.)[cite: 8]",
+		"Tourist City Tax – payable directly by the passenger at each hotel[cite: 8]",
+		"RT-PCR charges in India and Malaysia[cite: 8]",
+		"POE charges and passport charges[cite: 8]",
+		"Expenses of a personal nature (porterage, laundry, mini-bar, mineral water, telephone, food and drinks not part of package)[cite: 8]",
+		"Additional meals not mentioned in the itinerary[cite: 8]",
+		"Cost of excursions, city sightseeing, entrance fees, and local guides availed of other than those mentioned in the itinerary[cite: 8]",
+		"Airfare[cite: 8]"
+	  ],
+	  "itinerary": [
+		{
+		  "day": 1,
+		  "title": "Arrival Transfer, KL City Tour, KL Tower & Batu Caves",
+		  "description": "Arrive in Kuala Lumpur. After immigration formalities, embark on a city tour including the KL Tower observation deck, photo stop at the iconic PETRONAS Twin Towers, National Mosque, KL Railway Station, and King's Palace[cite: 8]. Proceed to Batu Caves, a limestone outcrop with Hindu shrines and 272 steps[cite: 8]. Check in and overnight in Kuala Lumpur[cite: 8]."
+		},
+		{
+		  "day": 2,
+		  "title": "Genting Highlands Day Trip & SkyWorlds Theme Park",
+		  "description": "After breakfast, proceed for a day trip to Genting Highlands featuring a 2-way cable car ride—one of the longest and fastest gondola lifts in Southeast Asia[cite: 8]. Enjoy a full day at Genting SkyWorlds Outdoor Theme Park across 9 immersive movie- and adventure-inspired worlds with 26 rides and attractions[cite: 8]. Return to the hotel for an overnight stay in Kuala Lumpur[cite: 8]."
+		},
+		{
+		  "day": 3,
+		  "title": "Aquaria KLCC, Petronas Twin Towers & KL Bird Park",
+		  "description": "After breakfast, visit Aquaria KLCC oceanarium featuring a 90-meter underwater tunnel and thousands of marine and land animals[cite: 8]. Visit the KL Bird Park, home to over 3,000 birds in a free-flight rainforest environment[cite: 8]. In the evening, enjoy a visit to the Petronas Twin Towers[cite: 8]. Return to the hotel for an overnight stay in Kuala Lumpur[cite: 8]."
+		},
+		{
+		  "day": 4,
+		  "title": "Zoo Negara, Putrajaya Photo Stop & Departure",
+		  "description": "After breakfast and check-out, visit Zoo Negara, featuring 44 exhibits including the Giant Panda Conservation Center, Reptile Park, and Bird Aviary[cite: 8]. Enjoy an en-route photo stop at Putrajaya's monumental architecture before your transfer to the airport for your flight back home[cite: 8]."
+		}
+	  ],
+	  "featured": true
+	},
+	{
+	  "id": "pkg-8",
+	  "title": "Mauritius Island Paradise & Scenic Explorer",
+	  "country": "Mauritius",
+	  "image": "https://images.unsplash.com/photo-1512100356356-de1b84283e18?auto=format&fit=crop&w=1000&q=80",
+	  "baseRate": 1400,
+	  "discountRate": 1120,
+	  "discountPercent": 20,
+	  "duration": "7 Days / 6 Nights",
+	  "description": "Experience the tropical beauty of Mauritius on a 6-night getaway featuring a North Island tour with Port Louis and Caudan Waterfront[cite: 9], a thrilling speedboat excursion to Ile aux Cerfs[cite: 9], relaxing leisure days, and a comprehensive South Island tour covering Trou aux Cerfs, Grand Bassin, and La Vallée des Couleurs[cite: 9].",
+	  "rating": 4.8,
+	  "reviewsCount": 134,
+	  "category": "Island & Beach",
+	  "highlights": [
+		"Port Louis City Tour & Fort Adelaide Citadel Viewpoint[cite: 9]",
+		"Kuan Fu Tea Factory & Caudan Waterfront Shopping Arcade[cite: 9]",
+		"Speedboat Ride and Beach Relaxation at Ile aux Cerfs Island[cite: 9]",
+		"Volcanic Crater Trou aux Cerfs & Grand Bassin Shiv Temples[cite: 9]",
+		"La Vallée des Couleurs Nature Park[cite: 9]"
+	  ],
+	  "inclusions": [
+		"6 Nights’ Accommodation on Breakfast & Dinner basis[cite: 9]",
+		"Arrival transfer[cite: 9]",
+		"Ile Aux Cerfs Island including speed boat fee[cite: 9]",
+		"South Tour including valley of 23 Colors entrance fee[cite: 9]",
+		"North tour, Citadel Fort Adelaide & Le Caudan Waterfront[cite: 9]",
+		"Departure transfer[cite: 9]"
+	  ],
+	  "exclusions": [
+		"Overseas Medical Insurance[cite: 9]",
+		"Mauritius Visa-On Arrival[cite: 9]",
+		"Tipping for on-tour services (coach driver, local guides, etc.)[cite: 9]",
+		"Tourist City Tax – payable directly by the passenger at each hotel[cite: 9]",
+		"RT-PCR charges in India and Mauritius[cite: 9]",
+		"POE charges and passport charges[cite: 9]",
+		"Personal expenses (porterage, laundry, mini-bar, mineral water, telephone charges, food and drinks not part of the package)[cite: 9]",
+		"Additional meals not mentioned in the itinerary[cite: 9]",
+		"Cost of excursions, city sightseeing, entrance fees, and local guides availed of other than those mentioned[cite: 9]",
+		"Incidental charges and security deposit at hotel[cite: 9]",
+		"Flight / Ferry / Coach tickets unless specifically stated in inclusions[cite: 9]"
+	  ],
+	  "itinerary": [
+		{
+		  "day": 1,
+		  "title": "Arrive Mauritius – Transfer to Hotel",
+		  "description": "Upon arrival at Mauritius International Airport, clear immigration and health check formalities and meet our local representative who will assist you with your transfer to the hotel on a seat-in-coach basis. Enjoy dinner at the hotel[cite: 9]."
+		},
+		{
+		  "day": 2,
+		  "title": "Mauritius: Day at Leisure",
+		  "description": "Enjoy breakfast at the hotel. Spend the day at leisure to relax completely before starting sightseeing tours. Enjoy dinner at the hotel[cite: 9]."
+		},
+		{
+		  "day": 3,
+		  "title": "Mauritius: North Island Tour",
+		  "description": "After breakfast, proceed for a North Island tour. Begin with a city tour of Port Louis, visit Fort Adelaide (Citadel) for panoramic viewpoints, explore the unique Kuan Fu Tea Factory, visit Caudan Waterfront shopping arcade, and stop at Bagatelle Mall for shopping. Return to the hotel for dinner[cite: 9]."
+		},
+		{
+		  "day": 4,
+		  "title": "Mauritius: Ile Aux Cerfs Island Tour",
+		  "description": "After breakfast, proceed to Belle Mare beach where water sports are available at an additional cost. Continue to Trou d’eau Douce village for a thrilling speedboat ride across to Ile aux Cerfs Island to revel in fine white sands and clear blue waters. Return to the hotel for dinner[cite: 9]."
+		},
+		{
+		  "day": 5,
+		  "title": "Mauritius: Day at Leisure",
+		  "description": "Enjoy breakfast at the hotel. Spend the day at leisure exploring the island on your own, shopping, or soaking up the sun on the beach. Enjoy dinner at the hotel[cite: 9]."
+		},
+		{
+		  "day": 6,
+		  "title": "Mauritius: South Island Tour",
+		  "description": "After breakfast, embark on a full-day South Island tour. Visit the famous volcanic crater Trou aux Cerfs, Ganga Talao (Grand Bassin Shiv Temples), a model ship factory, Adams duty-free shop, and La Vallée des Couleurs Nature Park. Return to the hotel for dinner[cite: 9]."
+		},
+		{
+		  "day": 7,
+		  "title": "Depart from Mauritius",
+		  "description": "Enjoy breakfast at the hotel, check out, and transfer to the airport on a seat-in-coach basis for your flight back home[cite: 9]."
+		}
+	  ],
+	  "featured": true
+	},
+	{
+	  "id": "pkg-9",
+	  "title": "Nepal Himalayan Scenic & Cultural Gateway",
+	  "country": "Nepal",
+	  "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1000&q=80",
+	  "baseRate": 1100,
+	  "discountRate": 880,
+	  "discountPercent": 20,
+	  "duration": "6 Days / 5 Nights",
+	  "description": "Discover the cultural and natural beauty of Nepal on a 6-day journey covering Kathmandu and Pokhara[cite: 10]. Experience sunrise views over the Himalayas from Sarangkot, boat rides on Fewa Lake, visits to sacred temples and stupas including Pashupatinath and Swayambhunath, and scenic drives along the Trishuli River[cite: 10].",
+	  "rating": 4.8,
+	  "reviewsCount": 92,
+	  "category": "Culture & Mountain",
+	  "highlights": [
+		"Scenic Drive along the Trishuli River to Pokhara[cite: 10]",
+		"Optional Manakamana Temple Visit by Cable Car[cite: 10]",
+		"Sunrise Panoramic Mountain Views from Sarangkot[cite: 10]",
+		"Pokhara Valley Tour: Davis Fall, Seti Gorge & Bindhyabasini Temple[cite: 10]",
+		"1-Hour Boat Ride on Fewa Lake[cite: 10]",
+		"Pashupatinath Temple & Bouddhanath Stupa[cite: 10]",
+		"Patan Durbar Square & Swayambhunath Monkey Temple[cite: 10]"
+	  ],
+	  "inclusions": [
+		"Return private airport transfers in Kathmandu & Pokhara[cite: 10]",
+		"Accommodation for 5 nights / 6 days in double/twin occupancy rooms[cite: 10]",
+		"Daily breakfast & dinner at the hotel, plus lunch en route during sightseeing or intercity transfers[cite: 10]",
+		"Private sightseeing in Kathmandu & Pokhara as mentioned[cite: 10]",
+		"All applicable hotel taxes[cite: 10]",
+		"Mineral water during the tour (1 Liter per day per person)[cite: 10]",
+		"03 Nights' accommodation in Kathmandu on Double/Twin sharing AP Basis[cite: 10]",
+		"02 Nights' accommodation in Pokhara on Double/Twin sharing AP Basis[cite: 10]",
+		"01 Local SIM card with 4G facilities (returnable)[cite: 10]",
+		"All sightseeing by private AC vehicle (Sedan car or similar)[cite: 10]"
+	  ],
+	  "exclusions": [
+		"Licensed tour guide during sightseeing[cite: 10]",
+		"Entrance & monument fees[cite: 10]",
+		"Manakamana Cable car tickets[cite: 10]",
+		"Bar bills[cite: 10]",
+		"RT-PCR test for return[cite: 10]",
+		"Laundry bills[cite: 10]",
+		"Tips and personal expenses[cite: 10]",
+		"Baggage expenses[cite: 10]",
+		"Any other expenses due to political reasons, acts of nature, or circumstances beyond control[cite: 10]"
+	  ],
+	  "itinerary": [
+		{
+		  "day": 1,
+		  "title": "Arrival in Kathmandu & Sightseeing",
+		  "description": "Arrival at Kathmandu International Airport. Meet and greet by our representative and transfer to the hotel for a welcome drink and tour briefing. Rest of the day is free for personal activities. Overnight in Kathmandu[cite: 10]."
+		},
+		{
+		  "day": 2,
+		  "title": "Kathmandu – Pokhara via Manakamana",
+		  "description": "After breakfast, drive from Kathmandu to Pokhara (200 km / 6 hours) observing scenic views along the Trishuli River[cite: 10]. En route, optionally visit Manakamana Temple by cable car[cite: 10]. Upon arrival in Pokhara, check into the hotel and enjoy an evening walk around the Lakeside area with views of the western Himalayan range and Mt. Fishtail. Overnight in Pokhara[cite: 10]."
+		},
+		{
+		  "day": 3,
+		  "title": "Pokhara Sunrise & Valley Tour",
+		  "description": "Early morning proceed to Sarangkot (8 km from Pokhara) for panoramic mountain views as the sun transforms the peaks from purple-pink to celestial gold[cite: 10]. Later, embark on a sightseeing tour of Pokhara valley covering Davis Fall, Tibetan Refugee Camp, Seti Gorge, Mahadev Cave, Bindhyabasini Temple, and a 1-hour boat ride on Fewa Lake[cite: 10]. Overnight in Pokhara[cite: 10]."
+		},
+		{
+		  "day": 4,
+		  "title": "Drive Back to Kathmandu",
+		  "description": "After breakfast, drive back to Kathmandu[cite: 10]. Upon arrival, check in at the hotel with the rest of the day free for personal activities. Overnight in Kathmandu[cite: 10]."
+		},
+		{
+		  "day": 5,
+		  "title": "Kathmandu Full-Day Sightseeing",
+		  "description": "After breakfast, proceed for a full-day sightseeing tour covering Pashupatinath Temple, Bouddhanath Stupa, Patan Durbar Square with the oldest Krishna temple, and Swayambhunath (Monkey Temple) situated on a hillock overlooking the valley and eastern Himalayan range[cite: 10]. Return to the hotel for an overnight stay[cite: 10]."
+		},
+		{
+		  "day": 6,
+		  "title": "Kathmandu – Departure",
+		  "description": "Check out from the hotel and transfer to the airport for your flight back home[cite: 10]."
+		}
+	  ],
+	  "featured": true
+	},
+	{
+	  "id": "pkg-10",
+	  "title": "Phuket & Krabi Tropical Beach & Island Explorer",
+	  "country": "Thailand",
+	  "image": "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=1000&q=80",
+	  "baseRate": 1050,
+	  "discountRate": 840,
+	  "discountPercent": 20,
+	  "duration": "5 Days / 4 Nights",
+	  "description": "Experience the stunning beaches and islands of Southern Thailand on a 4-night getaway covering Phuket and Krabi[cite: 11]. Enjoy a Phuket city tour, an unforgettable encounter at the Tiger Kingdom[cite: 11], a full-day big boat tour to Phi Phi Island and Khai Nok Island[cite: 11], and a classic 4-island long-tail boat tour in Krabi[cite: 11].",
+	  "rating": 4.8,
+	  "reviewsCount": 145,
+	  "category": "Beach & Island Adventure",
+	  "highlights": [
+		"Phuket City Tour & Souvenir Shopping[cite: 11]",
+		"Phi Phi Island Tour by Big Boat with Lunch & Snorkeling[cite: 11]",
+		"Pileh Bay Lagoon & Khai Nok Island Beach Relaxation[cite: 11]",
+		"Phuket Tiger Kingdom Encounter with Big Tigers[cite: 11]",
+		"Scenic Road Transfer from Phuket to Krabi[cite: 11]",
+		"Krabi City Tour & Tiger Cave Shrine Area[cite: 11]",
+		"Classic 4-Island Tour by Long-Tail Boat with Lunch (Koh Poda, Koh Mor & Koh Tub)[cite: 11]"
+	  ],
+	  "inclusions": [
+		"04 Nights in above mentioned hotel[cite: 11]",
+		"04 American breakfasts[cite: 11]",
+		"Half Day Phuket city tour (PVT)[cite: 11]",
+		"Phuket Tiger Kingdom (Big Tiger) (PVT)[cite: 11]",
+		"Phi Phi Island tour by big boat with lunch (SIC)[cite: 11]",
+		"Phuket to Krabi by Road[cite: 11]",
+		"Half Day Krabi city tour (PVT)[cite: 11]",
+		"04 Island tour by long tail boat with lunch (SIC)[cite: 11]",
+		"SHA plus certified vehicles for all transfers[cite: 11]",
+		"HKT APT - HKT HTL - KBV HTL - KBV APT (PVT)[cite: 11]"
+	  ],
+	  "exclusions": [
+		"Applicable Government Taxes are additional (GST 5%)[cite: 11]",
+		"Medical Insurance[cite: 11]",
+		"Thai Visa[cite: 11]",
+		"RT-PCR charges in Thailand[cite: 11]",
+		"Tipping for on-tour services (coach driver, local guides, etc.)[cite: 11]",
+		"Tourist City Tax – payable directly by passenger at each hotel[cite: 11]",
+		"POE charges and passport charges[cite: 11]",
+		"No porterage included[cite: 11]",
+		"Expenses of personal nature (laundry, mini-bar, mineral water, telephone, food/drinks not part of package)[cite: 11]",
+		"Additional meals not mentioned in the itinerary[cite: 11]",
+		"Cost of excursions, sightseeing, entrance fees, and local guides availed of other than mentioned[cite: 11]"
+	  ],
+	  "itinerary": [
+		{
+		  "day": 1,
+		  "title": "Arrive Phuket – City Tour",
+		  "description": "Upon arrival at Phuket airport, meet our representative and transfer to your hotel. Embark on a Phuket city tour to admire the natural beauty of Thailand's largest island and stop for souvenir shopping. Overnight in Phuket[cite: 11]."
+		},
+		{
+		  "day": 2,
+		  "title": "Phi Phi Island Tour by Big Boat",
+		  "description": "After breakfast, proceed for a full-day excursion to Phi Phi Island by big boat. Enjoy swimming and snorkeling among colorful corals at Phi Phi Don, discover the emerald lagoon of Pileh Bay, and gaze at the sculpted cliffs of Nui Bay. Enjoy a beachside lunch followed by free time at Khai Nok Island for swimming and relaxing. Return to Phuket for an overnight stay[cite: 11]."
+		},
+		{
+		  "day": 3,
+		  "title": "Phuket Tiger Kingdom & Transfer to Krabi",
+		  "description": "After breakfast and check-out, visit the Phuket Tiger Kingdom for an unforgettable encounter to meet, play, and take photos with majestic tigers while learning about wild tiger conservation. Afterwards, drive by road from Phuket to Krabi, exploring the region's lush jungles, limestone cliffs, and Buddhist shrines near Tiger Cave. Overnight in Krabi[cite: 11]."
+		},
+		{
+		  "day": 4,
+		  "title": "Krabi 4-Island Tour by Long-Tail Boat",
+		  "description": "After breakfast, embark on Krabi's classic 4-Island tour by long-tail boat. Snorkel in the crystal-clear turquoise waters of Koh Poda, snap photos against iconic rock formations, and walk across the sandbar connecting Koh Mor and Koh Tub at low tide. Enjoy lunch and admire the spectacular limestone cliffs and rich marine life. Overnight in Krabi[cite: 11]."
+		},
+		{
+		  "day": 5,
+		  "title": "Depart Krabi",
+		  "description": "After breakfast at your hotel, proceed to the airport for your departure flight as your fantastic tour comes to an end[cite: 11]."
+		}
+	  ],
+	  "featured": true
+	},
+	{
+	  "id": "pkg-11",
+	  "title": "Bangkok & Pattaya Highlights Explorer",
+	  "country": "Thailand",
+	  "image": "https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=1000&q=80",
+	  "baseRate": 850,
+	  "discountRate": 680,
+	  "discountPercent": 20,
+	  "duration": "5 Days / 4 Nights",
+	  "description": "Experience the vibrant culture and coastal beauty of Thailand on a 5-day journey covering Bangkok and Pattaya[cite: 12]. Enjoy the mesmerizing Alcazar Cabaret Show[cite: 12], speedboat tour to Coral Island (Koh Lan)[cite: 12], Pattaya Floating Market[cite: 12], Safari World and Marine Park[cite: 12], and a Bangkok temple and city tour featuring the Reclining and Golden Buddhas[cite: 12].",
+	  "rating": 4.8,
+	  "reviewsCount": 110,
+	  "category": "City & Beach",
+	  "highlights": [
+		"Alcazar Cabaret Show in Pattaya[cite: 12]",
+		"Coral Island (Koh Lan) Speedboat Tour with Lunch[cite: 12]",
+		"Pattaya Floating Market Experience[cite: 12]",
+		"Safari World and Marine Park Open Zoo with Lunch[cite: 12]",
+		"Bangkok Temple and City Tour (Reclining & Golden Buddha)[cite: 12]"
+	  ],
+	  "inclusions": [
+		"Arrival breakfast at Zayn Express / Witz Hotel or similar[cite: 12]",
+		"Hotel accommodation in Pattaya and Bangkok[cite: 12]",
+		"Alcazar Cabaret Show entry ticket[cite: 12]",
+		"Coral Island tour in speedboat with lunch[cite: 12]",
+		"Pattaya Floating Market visit[cite: 12]",
+		"Safari World and Marine Park tour with lunch[cite: 12]",
+		"Bangkok Temple and City Tour (Reclining Buddha + Golden Buddha)[cite: 12]",
+		"Airport transfer for departure[cite: 12]"
+	  ],
+	  "exclusions": [
+		"International airfare and visa fees",
+		"Personal expenses and optional water sports activities (Parasailing, Banana boat, etc.)[cite: 12]",
+		"Tips and gratuities",
+		"Travel insurance"
+	  ],
+	  "itinerary": [
+		{
+		  "day": 1,
+		  "title": "Arrive Bangkok – Transfer to Pattaya & Alcazar Cabaret Show",
+		  "description": "Arrive at Bangkok Airport, clear immigration, and enjoy breakfast with 3 hours room use at Zayn Express / Witz Hotel or similar[cite: 12]. Proceed to Pattaya, check in to the hotel, and in the evening enjoy the mesmerizing Alcazar Cabaret Show featuring elaborate stage designs and performances[cite: 12]. Overnight in Pattaya[cite: 12]."
+		},
+		{
+		  "day": 2,
+		  "title": "Coral Island Tour in Speedboat",
+		  "description": "After breakfast at the hotel, proceed to Coral Island (Koh Lan) via speedboat across the Gulf of Thailand[cite: 12]. Enjoy swimming, sunning, snorkeling, or optional water sports like parasailing and banana boat rides[cite: 12]. Return to the hotel for an overnight stay in Pattaya[cite: 12]."
+		},
+		{
+		  "day": 3,
+		  "title": "Pattaya Floating Market – Transfer to Bangkok",
+		  "description": "After breakfast and check-out, visit the Pattaya Floating Market featuring over 114 unique shops, boat rides, Thai delicacies, handicrafts, and souvenirs[cite: 12]. Afterward, proceed to Bangkok, check in to the hotel, and stay overnight[cite: 12]."
+		},
+		{
+		  "day": 4,
+		  "title": "Safari World and Marine Park",
+		  "description": "After breakfast, proceed to Safari World and Marine Park, Thailand's largest open zoo spanning over 200 acres[cite: 12]. Drive through the African-designed Safari Park landscape to view hundreds of animals and explore the Marine Park[cite: 12]. Return to your hotel for an overnight stay in Bangkok[cite: 12]."
+		},
+		{
+		  "day": 5,
+		  "title": "Bangkok Temple & City Tour – Departure",
+		  "description": "After breakfast, enjoy a Bangkok temple and city tour covering iconic cultural attractions including the Reclining Buddha and Golden Buddha[cite: 12]. Later, you will be transferred to the airport for your flight back home[cite: 12]."
+		}
+	  ],
+	  "featured": true
+	}
+
+
 ]
